@@ -1,8 +1,8 @@
 # .NET Core Örnekleri
 [Bloğumda](http://www.buraksenyurt.com) yayınladığım .NET Core konulu örnekleri içerir.
 
-- .Net Core 2.0 ile Bir Web API Geliştirilmesi
-- ASP.Net Core 2.0 ile WebSockets Örneği
+- .Net Core 2.0 ile Bir Web API Geliştirilmesi (Fabrika)
+- ASP.Net Core 2.0 ile WebSockets Örneği (HowToWebSockets)
 
 # Kaynaklar
 
