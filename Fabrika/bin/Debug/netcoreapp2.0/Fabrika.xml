@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fabrika</name>
+    </assembly>
+    <members>
+        <member name="M:Fabrika.Controllers.ProductsController.Get">
+            <summary>
+            Tüm ürün listesini verir
+            </summary>
+            <returns>Envanterin tamamı</returns>
+        </member>
+        <member name="M:Fabrika.Controllers.ProductsController.Get(System.Int32)">
+            <summary>
+            Id'ye göre bir ürün bilgisini verir
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Fabrika.Controllers.ProductsController.Post(Fabrika.Models.Product)">
+             <summary>
+             Yeni bir ürün eklemek için kullanılır
+             </summary>
+             <remarks>
+             Sample request:
+              POST /Products
+              {
+              	"Id":1012,
+                 "Name":"ürün adı",
+            		"UnitPrice":49.99
+            	 }
+            
+             </remarks>
+             <param name="newProduct">Yeni ürün bilgisi</param>
+             <response code="201">Yeni oluşturulan ürün bilgisi</response>
+             <response code="400">Bir öğe gönderilmedi</response>
+        </member>
+        <member name="M:Fabrika.Controllers.ProductsController.Put(System.Int64,Fabrika.Models.Product)">
+            <summary>
+            Bir ürünü günceller
+            </summary>
+            <param name="id">Güncellenecek ürün id</param>
+            <param name="value">Ürün bilgisi</param>
+        </member>
+        <member name="M:Fabrika.Controllers.ProductsController.Delete(System.Int64)">
+            <summary>
+            Bir ürünü silmek için kullanılır
+            </summary>
+            <param name="id">Ürün id'si</param>
+        </member>
+        <member name="M:Fabrika.Models.FabrikaContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Fabrika.Models.FabrikaContext})">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Fabrika.Program.Main(System.String[])">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Fabrika.Program.BuildWebHost(System.String[])">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Fabrika.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Fabrika.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Fabrika.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>
