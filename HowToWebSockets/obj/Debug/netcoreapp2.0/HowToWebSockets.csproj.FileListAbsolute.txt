@@ -1,0 +1,10 @@
+D:\D\core\HowToWebSockets\bin\Debug\netcoreapp2.0\HowToWebSockets.deps.json
+D:\D\core\HowToWebSockets\bin\Debug\netcoreapp2.0\HowToWebSockets.runtimeconfig.json
+D:\D\core\HowToWebSockets\bin\Debug\netcoreapp2.0\HowToWebSockets.runtimeconfig.dev.json
+D:\D\core\HowToWebSockets\bin\Debug\netcoreapp2.0\HowToWebSockets.dll
+D:\D\core\HowToWebSockets\bin\Debug\netcoreapp2.0\HowToWebSockets.pdb
+D:\D\core\HowToWebSockets\obj\Debug\netcoreapp2.0\HowToWebSockets.csproj.CoreCompileInputs.cache
+D:\D\core\HowToWebSockets\obj\Debug\netcoreapp2.0\HowToWebSockets.AssemblyInfoInputs.cache
+D:\D\core\HowToWebSockets\obj\Debug\netcoreapp2.0\HowToWebSockets.AssemblyInfo.cs
+D:\D\core\HowToWebSockets\obj\Debug\netcoreapp2.0\HowToWebSockets.dll
+D:\D\core\HowToWebSockets\obj\Debug\netcoreapp2.0\HowToWebSockets.pdb
