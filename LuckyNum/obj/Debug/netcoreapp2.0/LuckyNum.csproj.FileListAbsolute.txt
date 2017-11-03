@@ -1,0 +1,10 @@
+/home/burakselyum/Development/LuckyNum/bin/Debug/netcoreapp2.0/LuckyNum.deps.json
+/home/burakselyum/Development/LuckyNum/bin/Debug/netcoreapp2.0/LuckyNum.runtimeconfig.json
+/home/burakselyum/Development/LuckyNum/bin/Debug/netcoreapp2.0/LuckyNum.runtimeconfig.dev.json
+/home/burakselyum/Development/LuckyNum/bin/Debug/netcoreapp2.0/LuckyNum.dll
+/home/burakselyum/Development/LuckyNum/bin/Debug/netcoreapp2.0/LuckyNum.pdb
+/home/burakselyum/Development/LuckyNum/obj/Debug/netcoreapp2.0/LuckyNum.csproj.CoreCompileInputs.cache
+/home/burakselyum/Development/LuckyNum/obj/Debug/netcoreapp2.0/LuckyNum.AssemblyInfoInputs.cache
+/home/burakselyum/Development/LuckyNum/obj/Debug/netcoreapp2.0/LuckyNum.AssemblyInfo.cs
+/home/burakselyum/Development/LuckyNum/obj/Debug/netcoreapp2.0/LuckyNum.dll
+/home/burakselyum/Development/LuckyNum/obj/Debug/netcoreapp2.0/LuckyNum.pdb
