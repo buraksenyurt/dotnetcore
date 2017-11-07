@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/FabrikamConsumer/bin/Debug/netcoreapp2.0/FabrikamConsumer.deps.json
+/home/burakselyum/dotnetcore/FabrikamConsumer/bin/Debug/netcoreapp2.0/FabrikamConsumer.runtimeconfig.json
+/home/burakselyum/dotnetcore/FabrikamConsumer/bin/Debug/netcoreapp2.0/FabrikamConsumer.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/FabrikamConsumer/bin/Debug/netcoreapp2.0/FabrikamConsumer.dll
+/home/burakselyum/dotnetcore/FabrikamConsumer/bin/Debug/netcoreapp2.0/FabrikamConsumer.pdb
+/home/burakselyum/dotnetcore/FabrikamConsumer/obj/Debug/netcoreapp2.0/FabrikamConsumer.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/FabrikamConsumer/obj/Debug/netcoreapp2.0/FabrikamConsumer.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/FabrikamConsumer/obj/Debug/netcoreapp2.0/FabrikamConsumer.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/FabrikamConsumer/obj/Debug/netcoreapp2.0/FabrikamConsumer.dll
+/home/burakselyum/dotnetcore/FabrikamConsumer/obj/Debug/netcoreapp2.0/FabrikamConsumer.pdb

@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/FabrikamProducer/bin/Debug/netcoreapp2.0/FabrikamProducer.deps.json
+/home/burakselyum/dotnetcore/FabrikamProducer/bin/Debug/netcoreapp2.0/FabrikamProducer.runtimeconfig.json
+/home/burakselyum/dotnetcore/FabrikamProducer/bin/Debug/netcoreapp2.0/FabrikamProducer.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/FabrikamProducer/bin/Debug/netcoreapp2.0/FabrikamProducer.dll
+/home/burakselyum/dotnetcore/FabrikamProducer/bin/Debug/netcoreapp2.0/FabrikamProducer.pdb
+/home/burakselyum/dotnetcore/FabrikamProducer/obj/Debug/netcoreapp2.0/FabrikamProducer.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/FabrikamProducer/obj/Debug/netcoreapp2.0/FabrikamProducer.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/FabrikamProducer/obj/Debug/netcoreapp2.0/FabrikamProducer.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/FabrikamProducer/obj/Debug/netcoreapp2.0/FabrikamProducer.dll
+/home/burakselyum/dotnetcore/FabrikamProducer/obj/Debug/netcoreapp2.0/FabrikamProducer.pdb
