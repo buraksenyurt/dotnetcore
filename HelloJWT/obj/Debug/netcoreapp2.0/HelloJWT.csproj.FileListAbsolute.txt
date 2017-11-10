@@ -1,0 +1,10 @@
+/home/heimdall/Development/dotnetcore/HelloJWT/bin/Debug/netcoreapp2.0/HelloJWT.deps.json
+/home/heimdall/Development/dotnetcore/HelloJWT/bin/Debug/netcoreapp2.0/HelloJWT.runtimeconfig.json
+/home/heimdall/Development/dotnetcore/HelloJWT/bin/Debug/netcoreapp2.0/HelloJWT.runtimeconfig.dev.json
+/home/heimdall/Development/dotnetcore/HelloJWT/bin/Debug/netcoreapp2.0/HelloJWT.dll
+/home/heimdall/Development/dotnetcore/HelloJWT/bin/Debug/netcoreapp2.0/HelloJWT.pdb
+/home/heimdall/Development/dotnetcore/HelloJWT/obj/Debug/netcoreapp2.0/HelloJWT.csproj.CoreCompileInputs.cache
+/home/heimdall/Development/dotnetcore/HelloJWT/obj/Debug/netcoreapp2.0/HelloJWT.AssemblyInfoInputs.cache
+/home/heimdall/Development/dotnetcore/HelloJWT/obj/Debug/netcoreapp2.0/HelloJWT.AssemblyInfo.cs
+/home/heimdall/Development/dotnetcore/HelloJWT/obj/Debug/netcoreapp2.0/HelloJWT.dll
+/home/heimdall/Development/dotnetcore/HelloJWT/obj/Debug/netcoreapp2.0/HelloJWT.pdb
