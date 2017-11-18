@@ -6,7 +6,7 @@
 - Docker Üzerinde .Net Core Uygulaması Çalıştırmak (LuckyNum)
 - .Net Core 2.0 Web API ile JSON Web Token(JWT)
 - Kafka ile Konuşmak
-- Custom Middleware Ekleme(Asp.Net Core WebAPI)
+- Custom Middleware Yazmak(Asp.Net Core WebAPI)
 
 # Kaynaklar
 
