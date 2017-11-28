@@ -1,0 +1,10 @@
+/home/heimdall/Development/dotnetcore/Contoso/bin/Debug/netcoreapp2.0/Contoso.deps.json
+/home/heimdall/Development/dotnetcore/Contoso/bin/Debug/netcoreapp2.0/Contoso.runtimeconfig.json
+/home/heimdall/Development/dotnetcore/Contoso/bin/Debug/netcoreapp2.0/Contoso.runtimeconfig.dev.json
+/home/heimdall/Development/dotnetcore/Contoso/bin/Debug/netcoreapp2.0/Contoso.dll
+/home/heimdall/Development/dotnetcore/Contoso/bin/Debug/netcoreapp2.0/Contoso.pdb
+/home/heimdall/Development/dotnetcore/Contoso/obj/Debug/netcoreapp2.0/Contoso.csproj.CoreCompileInputs.cache
+/home/heimdall/Development/dotnetcore/Contoso/obj/Debug/netcoreapp2.0/Contoso.AssemblyInfoInputs.cache
+/home/heimdall/Development/dotnetcore/Contoso/obj/Debug/netcoreapp2.0/Contoso.AssemblyInfo.cs
+/home/heimdall/Development/dotnetcore/Contoso/obj/Debug/netcoreapp2.0/Contoso.dll
+/home/heimdall/Development/dotnetcore/Contoso/obj/Debug/netcoreapp2.0/Contoso.pdb

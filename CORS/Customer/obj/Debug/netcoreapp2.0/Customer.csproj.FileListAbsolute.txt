@@ -1,0 +1,10 @@
+/home/heimdall/Development/dotnetcore/Customer/bin/Debug/netcoreapp2.0/Customer.deps.json
+/home/heimdall/Development/dotnetcore/Customer/bin/Debug/netcoreapp2.0/Customer.runtimeconfig.json
+/home/heimdall/Development/dotnetcore/Customer/bin/Debug/netcoreapp2.0/Customer.runtimeconfig.dev.json
+/home/heimdall/Development/dotnetcore/Customer/bin/Debug/netcoreapp2.0/Customer.dll
+/home/heimdall/Development/dotnetcore/Customer/bin/Debug/netcoreapp2.0/Customer.pdb
+/home/heimdall/Development/dotnetcore/Customer/obj/Debug/netcoreapp2.0/Customer.csproj.CoreCompileInputs.cache
+/home/heimdall/Development/dotnetcore/Customer/obj/Debug/netcoreapp2.0/Customer.AssemblyInfoInputs.cache
+/home/heimdall/Development/dotnetcore/Customer/obj/Debug/netcoreapp2.0/Customer.AssemblyInfo.cs
+/home/heimdall/Development/dotnetcore/Customer/obj/Debug/netcoreapp2.0/Customer.dll
+/home/heimdall/Development/dotnetcore/Customer/obj/Debug/netcoreapp2.0/Customer.pdb

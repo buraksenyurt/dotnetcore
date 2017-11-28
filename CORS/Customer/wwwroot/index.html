@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Contoso Name List</title>
+</head>
+<body>
+ 
+  <div>
+    <h2>Contoso Names</h2>
+    <ul id="values" />
+  </div>
+  <div>    
+    <input type="button" value="Get" onclick="getValues();" />
+    <p id="Contoso" />
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+   
+    function getValues() {
+      var uri = 'http://localhost:6001/api/values';
+      $('#values').empty();
+       
+      $.getJSON(uri)
+      .done(function (data) {
+        $.each(data, function (key, value) {              
+          $('<li>', { text: value}).appendTo($('#values'));
+        });
+      });
+    }
+     
+  </script>
+</body>
+</html>
