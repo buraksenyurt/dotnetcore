@@ -7,6 +7,7 @@
 - .Net Core 2.0 Web API ile JSON Web Token(JWT)
 - Kafka ile Konuşmak
 - Custom Middleware Yazmak(Asp.Net Core WebAPI)
+- CORS(Cross-Origin Resource Sharing)
 
 # Kaynaklar
 
