@@ -8,6 +8,7 @@
 - Kafka ile Konuşmak
 - Custom Middleware Yazmak(Asp.Net Core WebAPI)
 - CORS(Cross-Origin Resource Sharing)
+- Console tabanlı SignalR Örneği(1.0.0-alpha2-final)
 
 # Kaynaklar
 
