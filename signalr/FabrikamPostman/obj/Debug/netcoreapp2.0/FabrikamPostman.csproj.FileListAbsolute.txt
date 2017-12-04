@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/bin/Debug/netcoreapp2.0/FabrikamPostman.deps.json
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/bin/Debug/netcoreapp2.0/FabrikamPostman.runtimeconfig.json
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/bin/Debug/netcoreapp2.0/FabrikamPostman.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/bin/Debug/netcoreapp2.0/FabrikamPostman.dll
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/bin/Debug/netcoreapp2.0/FabrikamPostman.pdb
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/obj/Debug/netcoreapp2.0/FabrikamPostman.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/obj/Debug/netcoreapp2.0/FabrikamPostman.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/obj/Debug/netcoreapp2.0/FabrikamPostman.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/obj/Debug/netcoreapp2.0/FabrikamPostman.dll
+/home/burakselyum/dotnetcore/signalr/FabrikamPostman/obj/Debug/netcoreapp2.0/FabrikamPostman.pdb

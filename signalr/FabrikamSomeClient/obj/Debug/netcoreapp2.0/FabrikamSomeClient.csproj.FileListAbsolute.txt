@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/bin/Debug/netcoreapp2.0/FabrikamSomeClient.deps.json
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/bin/Debug/netcoreapp2.0/FabrikamSomeClient.runtimeconfig.json
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/bin/Debug/netcoreapp2.0/FabrikamSomeClient.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/bin/Debug/netcoreapp2.0/FabrikamSomeClient.dll
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/bin/Debug/netcoreapp2.0/FabrikamSomeClient.pdb
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/obj/Debug/netcoreapp2.0/FabrikamSomeClient.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/obj/Debug/netcoreapp2.0/FabrikamSomeClient.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/obj/Debug/netcoreapp2.0/FabrikamSomeClient.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/obj/Debug/netcoreapp2.0/FabrikamSomeClient.dll
+/home/burakselyum/dotnetcore/signalr/FabrikamSomeClient/obj/Debug/netcoreapp2.0/FabrikamSomeClient.pdb
