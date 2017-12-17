@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/MariaDbSample/bin/Debug/netcoreapp2.0/MariaDbSample.deps.json
+/home/burakselyum/dotnetcore/MariaDbSample/bin/Debug/netcoreapp2.0/MariaDbSample.runtimeconfig.json
+/home/burakselyum/dotnetcore/MariaDbSample/bin/Debug/netcoreapp2.0/MariaDbSample.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/MariaDbSample/bin/Debug/netcoreapp2.0/MariaDbSample.dll
+/home/burakselyum/dotnetcore/MariaDbSample/bin/Debug/netcoreapp2.0/MariaDbSample.pdb
+/home/burakselyum/dotnetcore/MariaDbSample/obj/Debug/netcoreapp2.0/MariaDbSample.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/MariaDbSample/obj/Debug/netcoreapp2.0/MariaDbSample.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/MariaDbSample/obj/Debug/netcoreapp2.0/MariaDbSample.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/MariaDbSample/obj/Debug/netcoreapp2.0/MariaDbSample.dll
+/home/burakselyum/dotnetcore/MariaDbSample/obj/Debug/netcoreapp2.0/MariaDbSample.pdb
