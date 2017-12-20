@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/RouterSamples/bin/Debug/netcoreapp2.0/RouterSamples.deps.json
+/home/burakselyum/dotnetcore/RouterSamples/bin/Debug/netcoreapp2.0/RouterSamples.runtimeconfig.json
+/home/burakselyum/dotnetcore/RouterSamples/bin/Debug/netcoreapp2.0/RouterSamples.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/RouterSamples/bin/Debug/netcoreapp2.0/RouterSamples.dll
+/home/burakselyum/dotnetcore/RouterSamples/bin/Debug/netcoreapp2.0/RouterSamples.pdb
+/home/burakselyum/dotnetcore/RouterSamples/obj/Debug/netcoreapp2.0/RouterSamples.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/RouterSamples/obj/Debug/netcoreapp2.0/RouterSamples.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/RouterSamples/obj/Debug/netcoreapp2.0/RouterSamples.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/RouterSamples/obj/Debug/netcoreapp2.0/RouterSamples.dll
+/home/burakselyum/dotnetcore/RouterSamples/obj/Debug/netcoreapp2.0/RouterSamples.pdb
