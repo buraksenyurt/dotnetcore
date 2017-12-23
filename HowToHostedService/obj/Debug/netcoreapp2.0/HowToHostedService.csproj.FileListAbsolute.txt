@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/HowToHostedService/bin/Debug/netcoreapp2.0/HowToHostedService.deps.json
+/home/burakselyum/dotnetcore/HowToHostedService/bin/Debug/netcoreapp2.0/HowToHostedService.runtimeconfig.json
+/home/burakselyum/dotnetcore/HowToHostedService/bin/Debug/netcoreapp2.0/HowToHostedService.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/HowToHostedService/bin/Debug/netcoreapp2.0/HowToHostedService.dll
+/home/burakselyum/dotnetcore/HowToHostedService/bin/Debug/netcoreapp2.0/HowToHostedService.pdb
+/home/burakselyum/dotnetcore/HowToHostedService/obj/Debug/netcoreapp2.0/HowToHostedService.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/HowToHostedService/obj/Debug/netcoreapp2.0/HowToHostedService.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/HowToHostedService/obj/Debug/netcoreapp2.0/HowToHostedService.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/HowToHostedService/obj/Debug/netcoreapp2.0/HowToHostedService.dll
+/home/burakselyum/dotnetcore/HowToHostedService/obj/Debug/netcoreapp2.0/HowToHostedService.pdb
