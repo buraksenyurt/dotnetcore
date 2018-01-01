@@ -12,6 +12,7 @@
 - Entity Framework Core ile MariaDb Kullanımı
 - Asp.Net Core Routing Örnekleri
 - Web API'lerde Hosted Service Kullanımı
+- .Net Core ile Amazon DynamoDB'yi Kullanmak
 
 # Kaynaklar
 
