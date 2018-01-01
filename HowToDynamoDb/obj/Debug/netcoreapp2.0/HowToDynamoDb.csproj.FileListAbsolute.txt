@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/HowToDynamoDb/bin/Debug/netcoreapp2.0/HowToDynamoDb.deps.json
+/home/burakselyum/dotnetcore/HowToDynamoDb/bin/Debug/netcoreapp2.0/HowToDynamoDb.runtimeconfig.json
+/home/burakselyum/dotnetcore/HowToDynamoDb/bin/Debug/netcoreapp2.0/HowToDynamoDb.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/HowToDynamoDb/bin/Debug/netcoreapp2.0/HowToDynamoDb.dll
+/home/burakselyum/dotnetcore/HowToDynamoDb/bin/Debug/netcoreapp2.0/HowToDynamoDb.pdb
+/home/burakselyum/dotnetcore/HowToDynamoDb/obj/Debug/netcoreapp2.0/HowToDynamoDb.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/HowToDynamoDb/obj/Debug/netcoreapp2.0/HowToDynamoDb.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/HowToDynamoDb/obj/Debug/netcoreapp2.0/HowToDynamoDb.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/HowToDynamoDb/obj/Debug/netcoreapp2.0/HowToDynamoDb.dll
+/home/burakselyum/dotnetcore/HowToDynamoDb/obj/Debug/netcoreapp2.0/HowToDynamoDb.pdb
