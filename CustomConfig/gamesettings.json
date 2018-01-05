@@ -1,0 +1,24 @@
+{
+    "Game": {
+        "Requirement": {
+            "OS": "Ubuntu",
+            "RAM": "8",
+            "Region": "west-world",
+            "Online": "true"
+        },
+        "Contacts": [
+            {
+                "Name": "tech support",
+                "Email": "techsupport@west-world.bla.bla"
+            },
+            {
+                "Name": "game master",
+                "Email": "gamemaster@west-world.bla.bla"
+            },
+            {
+                "Name": "help desk",
+                "Email": "helpdesk@west-world.bla.bla"
+            }
+        ]
+    }
+}

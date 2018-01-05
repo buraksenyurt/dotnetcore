@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/CustomConfig/bin/Debug/netcoreapp2.0/CustomConfig.deps.json
+/home/burakselyum/dotnetcore/CustomConfig/bin/Debug/netcoreapp2.0/CustomConfig.runtimeconfig.json
+/home/burakselyum/dotnetcore/CustomConfig/bin/Debug/netcoreapp2.0/CustomConfig.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/CustomConfig/bin/Debug/netcoreapp2.0/CustomConfig.dll
+/home/burakselyum/dotnetcore/CustomConfig/bin/Debug/netcoreapp2.0/CustomConfig.pdb
+/home/burakselyum/dotnetcore/CustomConfig/obj/Debug/netcoreapp2.0/CustomConfig.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/CustomConfig/obj/Debug/netcoreapp2.0/CustomConfig.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/CustomConfig/obj/Debug/netcoreapp2.0/CustomConfig.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/CustomConfig/obj/Debug/netcoreapp2.0/CustomConfig.dll
+/home/burakselyum/dotnetcore/CustomConfig/obj/Debug/netcoreapp2.0/CustomConfig.pdb

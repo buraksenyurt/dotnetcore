@@ -1,0 +1,20 @@
+{
+  "default_region": "east-2",
+  "provider": "amazon",
+  "region": {
+    "name": "east-2",
+    "address": "amazonda.bir.yer.east-2"
+  },
+  "services": [
+    {
+      "address": "products/get",
+      "response_type": "json",
+      "isPublic": "true"
+    },
+    {
+      "address": "products/get/{categoryName}",
+      "response_type": "json",
+      "isPublic": "true"
+    }
+  ]
+}
