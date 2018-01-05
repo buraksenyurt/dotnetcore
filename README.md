@@ -13,6 +13,7 @@
 - Asp.Net Core Routing Örnekleri
 - Web API'lerde Hosted Service Kullanımı
 - .Net Core ile Amazon DynamoDB'yi Kullanmak
+- .Net Core'da Custom Configuration Management (CustomConfiguration)
 
 # Kaynaklar
 
