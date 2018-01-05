@@ -9,10 +9,10 @@
 - Custom Middleware Yazmak(Asp.Net Core WebAPI)
 - CORS(Cross-Origin Resource Sharing)
 - Console tabanlı SignalR Örneği(1.0.0-alpha2-final)
-- Entity Framework Core ile MariaDb Kullanımı
-- Asp.Net Core Routing Örnekleri
-- Web API'lerde Hosted Service Kullanımı
-- .Net Core ile Amazon DynamoDB'yi Kullanmak
+- Entity Framework Core ile MariaDb Kullanımı (MariaDBSample)
+- Asp.Net Core Routing Örnekleri (RouterSamples)
+- Web API'lerde Hosted Service Kullanımı (HowToHostedService)
+- .Net Core ile Amazon DynamoDB'yi Kullanmak (HowToDynamoDb)
 - .Net Core'da Custom Configuration Management (CustomConfiguration)
 
 # Kaynaklar
