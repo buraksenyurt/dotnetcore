@@ -14,6 +14,7 @@
 - Web API'lerde Hosted Service Kullanımı (HowToHostedService)
 - .Net Core ile Amazon DynamoDB'yi Kullanmak (HowToDynamoDb)
 - .Net Core'da Custom Configuration Management (CustomConfiguration)
+- Bir Web API Servisini Github Hesabıyla Yetkilendirmek (MyQuoteService)
 
 # Kaynaklar
 
