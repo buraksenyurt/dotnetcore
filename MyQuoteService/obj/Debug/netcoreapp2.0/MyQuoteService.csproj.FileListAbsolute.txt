@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/MyQuoteService/bin/Debug/netcoreapp2.0/MyQuoteService.deps.json
+/home/burakselyum/dotnetcore/MyQuoteService/bin/Debug/netcoreapp2.0/MyQuoteService.runtimeconfig.json
+/home/burakselyum/dotnetcore/MyQuoteService/bin/Debug/netcoreapp2.0/MyQuoteService.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/MyQuoteService/bin/Debug/netcoreapp2.0/MyQuoteService.dll
+/home/burakselyum/dotnetcore/MyQuoteService/bin/Debug/netcoreapp2.0/MyQuoteService.pdb
+/home/burakselyum/dotnetcore/MyQuoteService/obj/Debug/netcoreapp2.0/MyQuoteService.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/MyQuoteService/obj/Debug/netcoreapp2.0/MyQuoteService.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/MyQuoteService/obj/Debug/netcoreapp2.0/MyQuoteService.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/MyQuoteService/obj/Debug/netcoreapp2.0/MyQuoteService.dll
+/home/burakselyum/dotnetcore/MyQuoteService/obj/Debug/netcoreapp2.0/MyQuoteService.pdb
