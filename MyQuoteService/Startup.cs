@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -31,46 +31,46 @@ namespace MyQuoteService
             services.AddMvc();
 
             services.AddAuthentication(options =>
-        {
-            options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = "GitHub";
-        })
-        .AddCookie()
-        .AddOAuth("GitHub", options =>
-        {
-            options.ClientId = "sizinki";
-            options.ClientSecret = "sizinki";
-            options.CallbackPath = new PathString("/signin-github");
-
-            options.AuthorizationEndpoint = "https://github.com/login/oauth/authorize";
-            options.TokenEndpoint = "https://github.com/login/oauth/access_token";
-            options.UserInformationEndpoint = "https://api.github.com/user";
-
-            options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
-            options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
-            options.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
-            options.ClaimActions.MapJsonKey("urn:github:blog", "blog");
-
-            options.Events = new OAuthEvents
             {
-                OnCreatingTicket = async context =>
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = "GitHub";
+            })
+            .AddCookie()
+            .AddOAuth("GitHub", options =>
+            {
+                options.ClientId = "sizinki";
+                options.ClientSecret = "sizinki";
+                options.CallbackPath = new PathString("/signin-github");
+
+                options.AuthorizationEndpoint = "https://github.com/login/oauth/authorize";
+                options.TokenEndpoint = "https://github.com/login/oauth/access_token";
+                options.UserInformationEndpoint = "https://api.github.com/user";
+
+                options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
+                options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
+                options.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
+                options.ClaimActions.MapJsonKey("urn:github:blog", "blog");
+
+                options.Events = new OAuthEvents
                 {
-                    Console.WriteLine("OnCreatingTicket Event");
+                    OnCreatingTicket = async ctx =>
+                    {
+                        Console.WriteLine("OnCreatingTicket Event");
 
-                    var request = new HttpRequestMessage(HttpMethod.Get, context.Options.UserInformationEndpoint);
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", context.AccessToken);
+                        var request = new HttpRequestMessage(HttpMethod.Get, ctx.Options.UserInformationEndpoint);
+                        request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", ctx.AccessToken);
 
-                    var response = await context.Backchannel.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, context.HttpContext.RequestAborted);
-                    response.EnsureSuccessStatusCode();
+                        var response = await ctx.Backchannel.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, ctx.HttpContext.RequestAborted);
+                        response.EnsureSuccessStatusCode();
 
-                    var user = JObject.Parse(await response.Content.ReadAsStringAsync());
-                    context.RunClaimActions(user);
-                    Console.WriteLine($"User Info:\n{user.ToString()}");
-                }
-            };
-        });
+                        var userInfo = JObject.Parse(await response.Content.ReadAsStringAsync());
+                        ctx.RunClaimActions(userInfo);
+                        Console.WriteLine($"User Info:\n{userInfo.ToString()}");
+                    }
+                };
+            });
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
