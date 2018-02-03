@@ -15,6 +15,7 @@
 - .Net Core ile Amazon DynamoDB'yi Kullanmak (HowToDynamoDb)
 - .Net Core'da Custom Configuration Management (CustomConfiguration)
 - Bir Web API Servisini Github Hesabıyla Yetkilendirmek (MyQuoteService)
+- Google Cloud Storage Kullanımı (howtostorage)
 
 # Kaynaklar
 
