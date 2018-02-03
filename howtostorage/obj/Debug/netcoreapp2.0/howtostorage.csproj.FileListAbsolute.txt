@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/howtostorage/bin/Debug/netcoreapp2.0/howtostorage.deps.json
+/home/burakselyum/dotnetcore/howtostorage/bin/Debug/netcoreapp2.0/howtostorage.runtimeconfig.json
+/home/burakselyum/dotnetcore/howtostorage/bin/Debug/netcoreapp2.0/howtostorage.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/howtostorage/bin/Debug/netcoreapp2.0/howtostorage.dll
+/home/burakselyum/dotnetcore/howtostorage/bin/Debug/netcoreapp2.0/howtostorage.pdb
+/home/burakselyum/dotnetcore/howtostorage/obj/Debug/netcoreapp2.0/howtostorage.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/howtostorage/obj/Debug/netcoreapp2.0/howtostorage.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/howtostorage/obj/Debug/netcoreapp2.0/howtostorage.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/howtostorage/obj/Debug/netcoreapp2.0/howtostorage.dll
+/home/burakselyum/dotnetcore/howtostorage/obj/Debug/netcoreapp2.0/howtostorage.pdb
