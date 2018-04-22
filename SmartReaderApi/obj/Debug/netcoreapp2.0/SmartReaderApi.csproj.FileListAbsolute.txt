@@ -1,0 +1,10 @@
+/home/burakselyum/dotnetcore/SmartReaderApi/obj/Debug/netcoreapp2.0/SmartReaderApi.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/SmartReaderApi/obj/Debug/netcoreapp2.0/SmartReaderApi.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/SmartReaderApi/obj/Debug/netcoreapp2.0/SmartReaderApi.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/SmartReaderApi/bin/Debug/netcoreapp2.0/SmartReaderApi.deps.json
+/home/burakselyum/dotnetcore/SmartReaderApi/bin/Debug/netcoreapp2.0/SmartReaderApi.runtimeconfig.json
+/home/burakselyum/dotnetcore/SmartReaderApi/bin/Debug/netcoreapp2.0/SmartReaderApi.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/SmartReaderApi/bin/Debug/netcoreapp2.0/SmartReaderApi.dll
+/home/burakselyum/dotnetcore/SmartReaderApi/bin/Debug/netcoreapp2.0/SmartReaderApi.pdb
+/home/burakselyum/dotnetcore/SmartReaderApi/obj/Debug/netcoreapp2.0/SmartReaderApi.dll
+/home/burakselyum/dotnetcore/SmartReaderApi/obj/Debug/netcoreapp2.0/SmartReaderApi.pdb
