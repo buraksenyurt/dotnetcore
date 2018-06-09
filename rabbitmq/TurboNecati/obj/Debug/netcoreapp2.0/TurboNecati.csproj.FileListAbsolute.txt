@@ -1,0 +1,11 @@
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/bin/Debug/netcoreapp2.0/TurboNecati.deps.json
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/bin/Debug/netcoreapp2.0/TurboNecati.runtimeconfig.json
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/bin/Debug/netcoreapp2.0/TurboNecati.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/bin/Debug/netcoreapp2.0/TurboNecati.dll
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/bin/Debug/netcoreapp2.0/TurboNecati.pdb
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.csprojResolveAssemblyReference.cache
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.dll
+/home/burakselyum/dotnetcore/rabbitmq/TurboNecati/obj/Debug/netcoreapp2.0/TurboNecati.pdb

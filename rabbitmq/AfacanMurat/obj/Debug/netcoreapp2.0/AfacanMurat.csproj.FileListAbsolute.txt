@@ -1,0 +1,11 @@
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/bin/Debug/netcoreapp2.0/AfacanMurat.deps.json
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/bin/Debug/netcoreapp2.0/AfacanMurat.runtimeconfig.json
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/bin/Debug/netcoreapp2.0/AfacanMurat.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/bin/Debug/netcoreapp2.0/AfacanMurat.dll
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/bin/Debug/netcoreapp2.0/AfacanMurat.pdb
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.csprojResolveAssemblyReference.cache
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.dll
+/home/burakselyum/dotnetcore/rabbitmq/AfacanMurat/obj/Debug/netcoreapp2.0/AfacanMurat.pdb
