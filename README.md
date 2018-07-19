@@ -16,6 +16,7 @@
 - .Net Core'da Custom Configuration Management (CustomConfiguration)
 - Bir Web API Servisini Github Hesabıyla Yetkilendirmek (MyQuoteService)
 - Google Cloud Storage Kullanımı (howtostorage)
+- Web API Servislerini Swagger ile Zenginleştirmek (QuoteWallAPI)
 
 # Kaynaklar
 
