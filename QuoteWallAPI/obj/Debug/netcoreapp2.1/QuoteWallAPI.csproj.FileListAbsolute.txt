@@ -1,0 +1,16 @@
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.deps.json
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.runtimeconfig.json
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.runtimeconfig.dev.json
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.dll
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.pdb
+C:\Projects\CoreProjects\QuoteWallAPI\bin\Debug\netcoreapp2.1\QuoteWallAPI.xml
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.csprojAssemblyReference.cache
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.csproj.CoreCompileInputs.cache
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.RazorAssemblyInfo.cache
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.RazorAssemblyInfo.cs
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.AssemblyInfoInputs.cache
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.AssemblyInfo.cs
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.RazorTargetAssemblyInfo.cache
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.dll
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.xml
+C:\Projects\CoreProjects\QuoteWallAPI\obj\Debug\netcoreapp2.1\QuoteWallAPI.pdb

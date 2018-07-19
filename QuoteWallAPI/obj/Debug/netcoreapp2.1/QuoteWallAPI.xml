@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuoteWallAPI</name>
+    </assembly>
+    <members>
+        <member name="T:QuoteWallAPI.Controllers.QuotesController">
+            <summary>
+            CRUD Controller for Daily Quote
+            </summary>
+        </member>
+        <member name="M:QuoteWallAPI.Controllers.QuotesController.Get">
+            <summary>
+            List all public quotes sorted by most recently liked.
+            </summary>
+            <remarks>with paging, this returns up to 100 quotes.</remarks>
+            <return>Quotes list</return>
+            <response code="200"></response>    
+        </member>
+        <member name="M:QuoteWallAPI.Controllers.QuotesController.Get(System.Int32)">
+            <summary>
+            Return a specific Quote from ID
+            </summary>
+            <param name="id">ID of Quote</param>
+            <return>Quotes list</return>
+            <response code="200">If found</response>    
+            <response code="404">If not found</response>
+        </member>
+        <member name="M:QuoteWallAPI.Controllers.QuotesController.Post(System.String)">
+            <summary>
+            Add a new Quote to QDB
+            </summary>
+            <param name="quoteBody">JSON content of Quote</param>
+            <remarks>
+            Sample body content
+            {"id":1,"Text":"Some words..","Author":"you"}
+            </remarks>
+            <response code="201">Added</response>    
+        </member>
+        <member name="M:QuoteWallAPI.Controllers.QuotesController.Put(System.Int32,System.String,System.String)">
+            <summary>
+            Update any Quote belongs to a specific Author and ID
+            </summary>        
+            <param name="id">Identity value of Quote</param>
+            <param name="author">Author of Quote</param>
+            <param name="quoteText">JSON content of updates</param>
+            <remarks>
+            Sample body content
+            {"Text":"Any update"}
+            </remarks>
+            <response code="201">Updated</response>    
+            <response code="404">If not found from ID</response> 
+        </member>
+        <member name="M:QuoteWallAPI.Controllers.QuotesController.Delete(System.Int32)">
+            <summary>
+            Delete any Quote from QDB
+            </summary>
+            <param name="id">ID of Quote</param>
+            <response code="204">Deleted</response>    
+            <response code="404">If not found from ID</response> 
+        </member>
+        <member name="T:QuoteWallAPI.Models.Quote">
+            <summary>
+            Some quote from you
+            </summary>
+        </member>
+        <member name="P:QuoteWallAPI.Models.Quote.Id">
+            <summary>Id of the Quote</summary>
+        </member>
+        <member name="P:QuoteWallAPI.Models.Quote.Text">
+            <summary>Text of the Quote</summary>
+        </member>
+        <member name="P:QuoteWallAPI.Models.Quote.Author">
+            <summary>Author of this Quote</summary>
+        </member>
+    </members>
+</doc>
