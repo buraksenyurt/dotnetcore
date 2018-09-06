@@ -1,0 +1,117 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+Unable to find .sln file. Will use current directory C:\Projects\CoreProjects\SerializationPerformance to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// restore --no-dependencies  /p:UseSharedCompilation=false took 2,7s and exited with 0
+// build --framework netcoreapp2.1 --configuration Release --no-restore --no-dependencies  /p:UseSharedCompilation=false took 4,09s and exited with 0
+// ***** Done, took 00:00:06 (6.94 sec)   *****
+// Found benchmarks:
+//   Measurement.Sha256: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+//   Measurement.Md5: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+
+// **************************
+// Benchmark: Measurement.Sha256: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3151499.15 ns, 3.1515 ms/op
+// AfterActualRun
+WorkloadResult   1: 1 op, 3151499.15 ns, 3.1515 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 3.1515 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 3.1515 ms, Q1 = 3.1515 ms, Median = 3.1515 ms, Q3 = 3.1515 ms, Max = 3.1515 ms
+IQR = 0.0000 ms, LowerFence = 3.1515 ms, UpperFence = 3.1515 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: Measurement.Md5: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2417048.87 ns, 2.4170 ms/op
+// AfterActualRun
+WorkloadResult   1: 1 op, 2417048.87 ns, 2.4170 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 2.4170 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 2.4170 ms, Q1 = 2.4170 ms, Median = 2.4170 ms, Q3 = 2.4170 ms, Max = 2.4170 ms
+IQR = 0.0000 ms, LowerFence = 2.4170 ms, UpperFence = 2.4170 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Measurement-report.csv
+  BenchmarkDotNet.Artifacts\results\Measurement-report-github.md
+  BenchmarkDotNet.Artifacts\results\Measurement-report.html
+
+// * Detailed results *
+Measurement.Sha256: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 3.1515 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 3.1515 ms, Q1 = 3.1515 ms, Median = 3.1515 ms, Q3 = 3.1515 ms, Max = 3.1515 ms
+IQR = 0.0000 ms, LowerFence = 3.1515 ms, UpperFence = 3.1515 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[3.151 ms ; 3.151 ms) | @
+---------------------------------------------------
+
+Measurement.Md5: DryCore(Runtime=Core, IterationCount=1, LaunchCount=1, RunStrategy=ColdStart, UnrollFactor=1, WarmupCount=1)
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.4170 ms, StdErr = 0.0000 ms (0.00%); N = 1, StdDev = 0.0000 ms
+Min = 2.4170 ms, Q1 = 2.4170 ms, Median = 2.4170 ms, Q3 = 2.4170 ms, Max = 2.4170 ms
+IQR = 0.0000 ms, LowerFence = 2.4170 ms, UpperFence = 2.4170 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[2.417 ms ; 2.417 ms) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.1, OS=Windows 10.0.15063.1266 (1703/CreatorsUpdate/Redstone2)
+Intel Core i7-6600U CPU 2.60GHz (Max: 2.61GHz) (Skylake), 1 CPU, 4 logical and 2 physical cores
+Frequency=2742187 Hz, Resolution=364.6724 ns, Timer=TSC
+.NET Core SDK=2.1.401
+  [Host]  : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+  DryCore : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+
+Job=DryCore  Runtime=Core  IterationCount=1  
+LaunchCount=1  RunStrategy=ColdStart  UnrollFactor=1  
+WarmupCount=1  
+
+ Method |     Mean | Error |
+------- |---------:|------:|
+ Sha256 | 3.151 ms |    NA |
+    Md5 | 2.417 ms |    NA |
+
+// * Warnings *
+MinIterationTime
+  Measurement.Sha256: DryCore -> MinIterationTime = 3.1515 ms which is very small. It's recommended to increase it.
+  Measurement.Md5: DryCore    -> MinIterationTime = 2.4170 ms which is very small. It's recommended to increase it.
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ms  : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:02 (2.3 sec), executed benchmarks: 2
+
+// * Artifacts cleanup *

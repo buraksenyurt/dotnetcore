@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Serializers</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.11.1, OS=Windows 10.0.15063.1266 (1703/CreatorsUpdate/Redstone2)
+Intel Core i7-6600U CPU 2.60GHz (Max: 2.61GHz) (Skylake), 1 CPU, 4 logical and 2 physical cores
+Frequency=2742187 Hz, Resolution=364.6724 ns, Timer=TSC
+.NET Core SDK=2.1.401
+  [Host]     : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+  Job-ZLGOUL : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+</code></pre>
+<pre><code>Runtime=Core  MaxIterationCount=5  MaxWarmupIterationCount=8  
+MinIterationCount=3  
+</code></pre>
+
+<table>
+<thead><tr><th>     Method</th><th>BookCount</th><th>  Mean</th><th> Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>ToJson</td><td>1</td><td>416.1 us</td><td>12.94 us</td><td>3.360 us</td>
+</tr><tr><td>ToMessagePack</td><td>1</td><td>375.6 us</td><td>43.21 us</td><td>11.224 us</td>
+</tr><tr><td>ToMessagePackJson</td><td>1</td><td>391.1 us</td><td>82.22 us</td><td>21.356 us</td>
+</tr><tr><td>ToProtobuf</td><td>1</td><td>385.8 us</td><td>61.31 us</td><td>15.925 us</td>
+</tr><tr><td>ToJson</td><td>10</td><td>415.4 us</td><td>38.41 us</td><td>9.976 us</td>
+</tr><tr><td>ToMessagePack</td><td>10</td><td>401.4 us</td><td>78.34 us</td><td>20.348 us</td>
+</tr><tr><td>ToMessagePackJson</td><td>10</td><td>398.0 us</td><td>71.87 us</td><td>18.668 us</td>
+</tr><tr><td>ToProtobuf</td><td>10</td><td>394.4 us</td><td>83.55 us</td><td>21.702 us</td>
+</tr><tr><td>ToJson</td><td>1000</td><td>2,492.2 us</td><td>716.95 us</td><td>186.224 us</td>
+</tr><tr><td>ToMessagePack</td><td>1000</td><td>555.3 us</td><td>90.84 us</td><td>23.596 us</td>
+</tr><tr><td>ToMessagePackJson</td><td>1000</td><td>1,446.8 us</td><td>374.64 us</td><td>97.311 us</td>
+</tr><tr><td>ToProtobuf</td><td>1000</td><td>1,264.8 us</td><td>55.97 us</td><td>14.538 us</td>
+</tr><tr><td>ToJson</td><td>10000</td><td>19,112.7 us</td><td>5,468.11 us</td><td>1,420.322 us</td>
+</tr><tr><td>ToMessagePack</td><td>10000</td><td>2,043.3 us</td><td>537.94 us</td><td>139.727 us</td>
+</tr><tr><td>ToMessagePackJson</td><td>10000</td><td>9,906.5 us</td><td>1,993.67 us</td><td>517.847 us</td>
+</tr><tr><td>ToProtobuf</td><td>10000</td><td>7,217.9 us</td><td>461.00 us</td><td>119.742 us</td>
+</tr><tr><td>ToJson</td><td>100000</td><td>180,636.8 us</td><td>21,877.57 us</td><td>5,682.617 us</td>
+</tr><tr><td>ToMessagePack</td><td>100000</td><td>17,483.2 us</td><td>1,275.54 us</td><td>331.317 us</td>
+</tr><tr><td>ToMessagePackJson</td><td>100000</td><td>104,183.6 us</td><td>29,461.76 us</td><td>7,652.583 us</td>
+</tr><tr><td>ToProtobuf</td><td>100000</td><td>77,098.1 us</td><td>33,598.03 us</td><td>8,726.963 us</td>
+</tr></tbody></table>
+</body>
+</html>

@@ -1,0 +1,1481 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+Unable to find .sln file. Will use current directory C:\Projects\CoreProjects\SerializationPerformance to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// restore --no-dependencies  /p:UseSharedCompilation=false took 3,57s and exited with 0
+// build --framework netcoreapp2.1 --configuration Release --no-restore --no-dependencies  /p:UseSharedCompilation=false took 6,62s and exited with 0
+// ***** Done, took 00:00:10 (10.41 sec)   *****
+// Found benchmarks:
+//   Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+//   Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+//   Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+//   Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+//   Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+//   Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+//   Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+//   Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+//   Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+//   Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+//   Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+//   Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+//   Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+//   Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+//   Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+//   Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+//   Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+//   Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+//   Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+//   Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+
+// **************************
+// Benchmark: Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-PYUQSJ(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 425572.73 ns, 425.5727 us/op
+WorkloadJitting  1: 1 op, 252022929.14 ns, 252.0229 ms/op
+WorkloadPilot    1: 2 op, 1031293.64 ns, 515.6468 us/op
+WorkloadPilot    2: 3 op, 1460513.09 ns, 486.8377 us/op
+WorkloadPilot    3: 4 op, 1693174.10 ns, 423.2935 us/op
+WorkloadPilot    4: 5 op, 2132969.05 ns, 426.5938 us/op
+WorkloadPilot    5: 6 op, 2503111.57 ns, 417.1853 us/op
+WorkloadPilot    6: 7 op, 2928319.62 ns, 418.3314 us/op
+WorkloadPilot    7: 8 op, 3685744.26 ns, 460.7180 us/op
+WorkloadPilot    8: 9 op, 3964354.00 ns, 440.4838 us/op
+WorkloadPilot    9: 10 op, 4243328.41 ns, 424.3328 us/op
+WorkloadPilot   10: 11 op, 4587214.51 ns, 417.0195 us/op
+WorkloadPilot   11: 12 op, 6660741.96 ns, 555.0618 us/op
+WorkloadPilot   12: 13 op, 5773858.60 ns, 444.1430 us/op
+WorkloadPilot   13: 14 op, 6176821.64 ns, 441.2015 us/op
+WorkloadPilot   14: 15 op, 6251214.82 ns, 416.7477 us/op
+WorkloadPilot   15: 16 op, 6659647.94 ns, 416.2280 us/op
+WorkloadPilot   16: 32 op, 16389473.07 ns, 512.1710 us/op
+WorkloadPilot   17: 64 op, 29805042.47 ns, 465.7038 us/op
+WorkloadPilot   18: 128 op, 57969788.35 ns, 452.8890 us/op
+WorkloadPilot   19: 256 op, 109391883.19 ns, 427.3120 us/op
+WorkloadPilot   20: 512 op, 205824766.87 ns, 402.0015 us/op
+WorkloadPilot   21: 1024 op, 412559756.14 ns, 402.8904 us/op
+WorkloadPilot   22: 2048 op, 840885030.82 ns, 410.5884 us/op
+WorkloadWarmup   1: 2048 op, 853836736.88 ns, 416.9125 us/op
+WorkloadWarmup   2: 2048 op, 837839286.67 ns, 409.1012 us/op
+WorkloadWarmup   3: 2048 op, 834696904.33 ns, 407.5668 us/op
+WorkloadWarmup   4: 2048 op, 741117582.43 ns, 361.8738 us/op
+WorkloadWarmup   5: 2048 op, 842508552.48 ns, 411.3811 us/op
+WorkloadWarmup   6: 2048 op, 806990187.03 ns, 394.0382 us/op
+WorkloadWarmup   7: 2048 op, 897622955.69 ns, 438.2925 us/op
+WorkloadWarmup   8: 2048 op, 804345947.23 ns, 392.7470 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 856590743.08 ns, 418.2572 us/op
+WorkloadActual   2: 2048 op, 857624589.42 ns, 418.7620 us/op
+WorkloadActual   3: 2048 op, 840491184.59 ns, 410.3961 us/op
+WorkloadActual   4: 2048 op, 854100030.38 ns, 417.0410 us/op
+WorkloadActual   5: 2048 op, 852232178.18 ns, 416.1290 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 856590743.08 ns, 418.2572 us/op
+WorkloadResult   2: 2048 op, 857624589.42 ns, 418.7620 us/op
+WorkloadResult   3: 2048 op, 840491184.59 ns, 410.3961 us/op
+WorkloadResult   4: 2048 op, 854100030.38 ns, 417.0410 us/op
+WorkloadResult   5: 2048 op, 852232178.18 ns, 416.1290 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 416.1171 us, StdErr = 1.5027 us (0.36%); N = 5, StdDev = 3.3600 us
+Min = 410.3961 us, Q1 = 413.2625 us, Median = 417.0410 us, Q3 = 418.5096 us, Max = 418.7620 us
+IQR = 5.2471 us, LowerFence = 405.3919 us, UpperFence = 426.3802 us
+ConfidenceInterval = [403.1812 us; 429.0529 us] (CI 99.9%), Margin = 12.9358 us (3.11% of Mean)
+Skewness = -0.83, Kurtosis = 1.79, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-QGAALO(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 549561.35 ns, 549.5614 us/op
+WorkloadJitting  1: 1 op, 207530339.83 ns, 207.5303 ms/op
+WorkloadPilot    1: 2 op, 1029470.27 ns, 514.7351 us/op
+WorkloadPilot    2: 3 op, 1374450.39 ns, 458.1501 us/op
+WorkloadPilot    3: 4 op, 1759544.48 ns, 439.8861 us/op
+WorkloadPilot    4: 5 op, 2085926.31 ns, 417.1853 us/op
+WorkloadPilot    5: 6 op, 2531556.02 ns, 421.9260 us/op
+WorkloadPilot    6: 7 op, 3123784.05 ns, 446.2549 us/op
+WorkloadPilot    7: 8 op, 3899077.63 ns, 487.3847 us/op
+WorkloadPilot    8: 9 op, 3871727.20 ns, 430.1919 us/op
+WorkloadPilot    9: 10 op, 3897254.27 ns, 389.7254 us/op
+WorkloadPilot   10: 11 op, 5482120.66 ns, 498.3746 us/op
+WorkloadPilot   11: 12 op, 5961300.23 ns, 496.7750 us/op
+WorkloadPilot   12: 13 op, 5326770.20 ns, 409.7516 us/op
+WorkloadPilot   13: 14 op, 6222405.69 ns, 444.4575 us/op
+WorkloadPilot   14: 15 op, 6343841.61 ns, 422.9228 us/op
+WorkloadPilot   15: 16 op, 7564035.57 ns, 472.7522 us/op
+WorkloadPilot   16: 32 op, 15989427.42 ns, 499.6696 us/op
+WorkloadPilot   17: 64 op, 28810945.42 ns, 450.1710 us/op
+WorkloadPilot   18: 128 op, 59032079.14 ns, 461.1881 us/op
+WorkloadPilot   19: 256 op, 106521181.82 ns, 416.0984 us/op
+WorkloadPilot   20: 512 op, 204877347.90 ns, 400.1511 us/op
+WorkloadPilot   21: 1024 op, 449068571.91 ns, 438.5435 us/op
+WorkloadPilot   22: 2048 op, 852886765.20 ns, 416.4486 us/op
+WorkloadWarmup   1: 2048 op, 810742301.67 ns, 395.8703 us/op
+WorkloadWarmup   2: 2048 op, 843983652.46 ns, 412.1014 us/op
+WorkloadWarmup   3: 2048 op, 800458539.11 ns, 390.8489 us/op
+WorkloadWarmup   4: 2048 op, 737105821.01 ns, 359.9150 us/op
+WorkloadWarmup   5: 2048 op, 766612561.43 ns, 374.3225 us/op
+WorkloadWarmup   6: 2048 op, 760600207.06 ns, 371.3868 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 780688917.28 ns, 381.1958 us/op
+WorkloadActual   2: 2048 op, 784851288.41 ns, 383.2282 us/op
+WorkloadActual   3: 2048 op, 787204884.28 ns, 384.3774 us/op
+WorkloadActual   4: 2048 op, 760357699.89 ns, 371.2684 us/op
+WorkloadActual   5: 2048 op, 732671039.58 ns, 357.7495 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 780688917.28 ns, 381.1958 us/op
+WorkloadResult   2: 2048 op, 784851288.41 ns, 383.2282 us/op
+WorkloadResult   3: 2048 op, 787204884.28 ns, 384.3774 us/op
+WorkloadResult   4: 2048 op, 760357699.89 ns, 371.2684 us/op
+WorkloadResult   5: 2048 op, 732671039.58 ns, 357.7495 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 375.5639 us, StdErr = 5.0197 us (1.34%); N = 5, StdDev = 11.2243 us
+Min = 357.7495 us, Q1 = 364.5090 us, Median = 381.1958 us, Q3 = 383.8028 us, Max = 384.3774 us
+IQR = 19.2938 us, LowerFence = 335.5683 us, UpperFence = 412.7435 us
+ConfidenceInterval = [332.3513 us; 418.7764 us] (CI 99.9%), Margin = 43.2125 us (11.51% of Mean)
+Skewness = -0.63, Kurtosis = 1.41, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-IEMITS(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 377800.64 ns, 377.8006 us/op
+WorkloadJitting  1: 1 op, 186214871.56 ns, 186.2149 ms/op
+WorkloadPilot    1: 2 op, 889071.39 ns, 444.5357 us/op
+WorkloadPilot    2: 3 op, 1332877.74 ns, 444.2926 us/op
+WorkloadPilot    3: 4 op, 1824456.17 ns, 456.1140 us/op
+WorkloadPilot    4: 5 op, 2044353.65 ns, 408.8707 us/op
+WorkloadPilot    5: 6 op, 2397356.56 ns, 399.5594 us/op
+WorkloadPilot    6: 7 op, 3574883.84 ns, 510.6977 us/op
+WorkloadPilot    7: 8 op, 3247408.00 ns, 405.9260 us/op
+WorkloadPilot    8: 9 op, 3895795.58 ns, 432.8662 us/op
+WorkloadPilot    9: 10 op, 6126861.52 ns, 612.6862 us/op
+WorkloadPilot   10: 11 op, 4087977.95 ns, 371.6344 us/op
+WorkloadPilot   11: 12 op, 4949698.91 ns, 412.4749 us/op
+WorkloadPilot   12: 13 op, 6473665.00 ns, 497.9742 us/op
+WorkloadPilot   13: 14 op, 6052468.34 ns, 432.3192 us/op
+WorkloadPilot   14: 15 op, 7205197.89 ns, 480.3465 us/op
+WorkloadPilot   15: 16 op, 7519910.20 ns, 469.9944 us/op
+WorkloadPilot   16: 32 op, 14483694.95 ns, 452.6155 us/op
+WorkloadPilot   17: 64 op, 25090557.28 ns, 392.0400 us/op
+WorkloadPilot   18: 128 op, 53152100.86 ns, 415.2508 us/op
+WorkloadPilot   19: 256 op, 103782491.86 ns, 405.4004 us/op
+WorkloadPilot   20: 512 op, 193057949.73 ns, 377.0663 us/op
+WorkloadPilot   21: 1024 op, 413342343.17 ns, 403.6546 us/op
+WorkloadPilot   22: 2048 op, 801733798.61 ns, 391.4716 us/op
+WorkloadWarmup   1: 2048 op, 808567759.97 ns, 394.8085 us/op
+WorkloadWarmup   2: 2048 op, 763399797.32 ns, 372.7538 us/op
+WorkloadWarmup   3: 2048 op, 763006315.76 ns, 372.5617 us/op
+WorkloadWarmup   4: 2048 op, 733425546.84 ns, 358.1179 us/op
+WorkloadWarmup   5: 2048 op, 797342777.86 ns, 389.3275 us/op
+WorkloadWarmup   6: 2048 op, 810253275.94 ns, 395.6315 us/op
+WorkloadWarmup   7: 2048 op, 818161197.61 ns, 399.4928 us/op
+WorkloadWarmup   8: 2048 op, 863489616.13 ns, 421.6258 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 773172289.13 ns, 377.5255 us/op
+WorkloadActual   2: 2048 op, 768961781.24 ns, 375.4696 us/op
+WorkloadActual   3: 2048 op, 773493200.86 ns, 377.6822 us/op
+WorkloadActual   4: 2048 op, 818751602.28 ns, 399.7811 us/op
+WorkloadActual   5: 2048 op, 870132489.14 ns, 424.8694 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 773172289.13 ns, 377.5255 us/op
+WorkloadResult   2: 2048 op, 768961781.24 ns, 375.4696 us/op
+WorkloadResult   3: 2048 op, 773493200.86 ns, 377.6822 us/op
+WorkloadResult   4: 2048 op, 818751602.28 ns, 399.7811 us/op
+WorkloadResult   5: 2048 op, 870132489.14 ns, 424.8694 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 391.0656 us, StdErr = 9.5508 us (2.44%); N = 5, StdDev = 21.3561 us
+Min = 375.4696 us, Q1 = 376.4976 us, Median = 377.6822 us, Q3 = 412.3252 us, Max = 424.8694 us
+IQR = 35.8276 us, LowerFence = 322.7561 us, UpperFence = 466.0667 us
+ConfidenceInterval = [308.8464 us; 473.2848 us] (CI 99.9%), Margin = 82.2192 us (21.02% of Mean)
+Skewness = 0.63, Kurtosis = 1.38, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-RTSLGT(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 474438.83 ns, 474.4388 us/op
+WorkloadJitting  1: 1 op, 137973449.66 ns, 137.9734 ms/op
+WorkloadPilot    1: 2 op, 1844513.16 ns, 922.2566 us/op
+WorkloadPilot    2: 3 op, 1202325.01 ns, 400.7750 us/op
+WorkloadPilot    3: 4 op, 1527248.14 ns, 381.8120 us/op
+WorkloadPilot    4: 5 op, 1880251.06 ns, 376.0502 us/op
+WorkloadPilot    5: 6 op, 2257322.35 ns, 376.2204 us/op
+WorkloadPilot    6: 7 op, 2720091.66 ns, 388.5845 us/op
+WorkloadPilot    7: 8 op, 3182860.98 ns, 397.8576 us/op
+WorkloadPilot    8: 9 op, 3763054.82 ns, 418.1172 us/op
+WorkloadPilot    9: 10 op, 3847294.15 ns, 384.7294 us/op
+WorkloadPilot   10: 11 op, 4555488.01 ns, 414.1353 us/op
+WorkloadPilot   11: 12 op, 6417505.44 ns, 534.7921 us/op
+WorkloadPilot   12: 13 op, 5134587.83 ns, 394.9683 us/op
+WorkloadPilot   13: 14 op, 14021654.98 ns, 1.0015 ms/op
+WorkloadPilot   14: 15 op, 6067055.24 ns, 404.4703 us/op
+WorkloadPilot   15: 16 op, 8616480.20 ns, 538.5300 us/op
+WorkloadPilot   16: 32 op, 13398065.12 ns, 418.6895 us/op
+WorkloadPilot   17: 64 op, 26196608.77 ns, 409.3220 us/op
+WorkloadPilot   18: 128 op, 54923679.53 ns, 429.0912 us/op
+WorkloadPilot   19: 256 op, 98101260.05 ns, 383.2080 us/op
+WorkloadPilot   20: 512 op, 196185380.50 ns, 383.1746 us/op
+WorkloadPilot   21: 1024 op, 382428331.84 ns, 373.4652 us/op
+WorkloadPilot   22: 2048 op, 764932880.22 ns, 373.5024 us/op
+WorkloadWarmup   1: 2048 op, 723139596.24 ns, 353.0955 us/op
+WorkloadWarmup   2: 2048 op, 828619273.59 ns, 404.5993 us/op
+WorkloadWarmup   3: 2048 op, 834796095.23 ns, 407.6153 us/op
+WorkloadWarmup   4: 2048 op, 843366262.04 ns, 411.7999 us/op
+WorkloadWarmup   5: 2048 op, 788145739.15 ns, 384.8368 us/op
+WorkloadWarmup   6: 2048 op, 748126221.88 ns, 365.2960 us/op
+WorkloadWarmup   7: 2048 op, 789937374.80 ns, 385.7116 us/op
+WorkloadWarmup   8: 2048 op, 846069943.44 ns, 413.1201 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 820065152.38 ns, 400.4224 us/op
+WorkloadActual   2: 2048 op, 830699000.47 ns, 405.6147 us/op
+WorkloadActual   3: 2048 op, 773109200.79 ns, 377.4947 us/op
+WorkloadActual   4: 2048 op, 762949062.19 ns, 372.5337 us/op
+WorkloadActual   5: 2048 op, 763967956.96 ns, 373.0312 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 820065152.38 ns, 400.4224 us/op
+WorkloadResult   2: 2048 op, 830699000.47 ns, 405.6147 us/op
+WorkloadResult   3: 2048 op, 773109200.79 ns, 377.4947 us/op
+WorkloadResult   4: 2048 op, 762949062.19 ns, 372.5337 us/op
+WorkloadResult   5: 2048 op, 763967956.96 ns, 373.0312 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 385.8194 us, StdErr = 7.1220 us (1.85%); N = 5, StdDev = 15.9252 us
+Min = 372.5337 us, Q1 = 372.7825 us, Median = 377.4947 us, Q3 = 403.0186 us, Max = 405.6147 us
+IQR = 30.2361 us, LowerFence = 327.4283 us, UpperFence = 448.3728 us
+ConfidenceInterval = [324.5087 us; 447.1301 us] (CI 99.9%), Margin = 61.3107 us (15.89% of Mean)
+Skewness = 0.29, Kurtosis = 0.81, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-XBJMHQ(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 521116.90 ns, 521.1169 us/op
+WorkloadJitting  1: 1 op, 221796690.01 ns, 221.7967 ms/op
+WorkloadPilot    1: 2 op, 1236239.54 ns, 618.1198 us/op
+WorkloadPilot    2: 3 op, 1629721.09 ns, 543.2404 us/op
+WorkloadPilot    3: 4 op, 1848889.23 ns, 462.2223 us/op
+WorkloadPilot    4: 5 op, 2503840.91 ns, 500.7682 us/op
+WorkloadPilot    5: 6 op, 3846564.80 ns, 641.0941 us/op
+WorkloadPilot    6: 7 op, 3095339.60 ns, 442.1914 us/op
+WorkloadPilot    7: 8 op, 3544616.03 ns, 443.0770 us/op
+WorkloadPilot    8: 9 op, 5003305.76 ns, 555.9229 us/op
+WorkloadPilot    9: 10 op, 5293585.01 ns, 529.3585 us/op
+WorkloadPilot   10: 11 op, 5626530.94 ns, 511.5028 us/op
+WorkloadPilot   11: 12 op, 5456228.92 ns, 454.6857 us/op
+WorkloadPilot   12: 13 op, 7670519.92 ns, 590.0400 us/op
+WorkloadPilot   13: 14 op, 6319043.89 ns, 451.3603 us/op
+WorkloadPilot   14: 15 op, 6717630.85 ns, 447.8421 us/op
+WorkloadPilot   15: 16 op, 8954166.87 ns, 559.6354 us/op
+WorkloadPilot   16: 32 op, 14621176.46 ns, 456.9118 us/op
+WorkloadPilot   17: 64 op, 30504848.87 ns, 476.6383 us/op
+WorkloadPilot   18: 128 op, 62825766.44 ns, 490.8263 us/op
+WorkloadPilot   19: 256 op, 115627052.42 ns, 451.6682 us/op
+WorkloadPilot   20: 512 op, 228936246.87 ns, 447.1411 us/op
+WorkloadPilot   21: 1024 op, 455867524.72 ns, 445.1831 us/op
+WorkloadPilot   22: 2048 op, 1000140398.89 ns, 488.3498 us/op
+WorkloadWarmup   1: 2048 op, 1046433740.66 ns, 510.9540 us/op
+WorkloadWarmup   2: 2048 op, 1009588696.91 ns, 492.9632 us/op
+WorkloadWarmup   3: 2048 op, 1078302099.75 ns, 526.5147 us/op
+WorkloadWarmup   4: 2048 op, 1069172525.43 ns, 522.0569 us/op
+WorkloadWarmup   5: 2048 op, 910755903.96 ns, 444.7050 us/op
+WorkloadWarmup   6: 2048 op, 839178728.51 ns, 409.7552 us/op
+WorkloadWarmup   7: 2048 op, 808948477.98 ns, 394.9944 us/op
+WorkloadWarmup   8: 2048 op, 859546048.46 ns, 419.7002 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 874117994.14 ns, 426.8154 us/op
+WorkloadActual   2: 2048 op, 859239358.95 ns, 419.5505 us/op
+WorkloadActual   3: 2048 op, 861683758.26 ns, 420.7440 us/op
+WorkloadActual   4: 2048 op, 831544311.16 ns, 406.0275 us/op
+WorkloadActual   5: 2048 op, 827019455.64 ns, 403.8181 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 874117994.14 ns, 426.8154 us/op
+WorkloadResult   2: 2048 op, 859239358.95 ns, 419.5505 us/op
+WorkloadResult   3: 2048 op, 861683758.26 ns, 420.7440 us/op
+WorkloadResult   4: 2048 op, 831544311.16 ns, 406.0275 us/op
+WorkloadResult   5: 2048 op, 827019455.64 ns, 403.8181 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 415.3911 us, StdErr = 4.4614 us (1.07%); N = 5, StdDev = 9.9760 us
+Min = 403.8181 us, Q1 = 404.9228 us, Median = 419.5505 us, Q3 = 423.7797 us, Max = 426.8154 us
+IQR = 18.8569 us, LowerFence = 376.6374 us, UpperFence = 452.0651 us
+ConfidenceInterval = [376.9845 us; 453.7977 us] (CI 99.9%), Margin = 38.4066 us (9.25% of Mean)
+Skewness = -0.13, Kurtosis = 0.88, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-LSZMRE(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 399680.98 ns, 399.6810 us/op
+WorkloadJitting  1: 1 op, 218453373.17 ns, 218.4534 ms/op
+WorkloadPilot    1: 2 op, 1101310.74 ns, 550.6554 us/op
+WorkloadPilot    2: 3 op, 1537094.30 ns, 512.3648 us/op
+WorkloadPilot    3: 4 op, 1978712.61 ns, 494.6782 us/op
+WorkloadPilot    4: 5 op, 2134792.41 ns, 426.9585 us/op
+WorkloadPilot    5: 6 op, 2523897.90 ns, 420.6496 us/op
+WorkloadPilot    6: 7 op, 2997607.38 ns, 428.2296 us/op
+WorkloadPilot    7: 8 op, 3460741.37 ns, 432.5927 us/op
+WorkloadPilot    8: 9 op, 4539442.42 ns, 504.3825 us/op
+WorkloadPilot    9: 10 op, 4115693.06 ns, 411.5693 us/op
+WorkloadPilot   10: 11 op, 4405972.31 ns, 400.5429 us/op
+WorkloadPilot   11: 12 op, 6552798.92 ns, 546.0666 us/op
+WorkloadPilot   12: 13 op, 5523328.64 ns, 424.8714 us/op
+WorkloadPilot   13: 14 op, 7368206.47 ns, 526.3005 us/op
+WorkloadPilot   14: 15 op, 6187761.81 ns, 412.5175 us/op
+WorkloadPilot   15: 16 op, 6544411.45 ns, 409.0257 us/op
+WorkloadPilot   16: 32 op, 17181176.92 ns, 536.9118 us/op
+WorkloadPilot   17: 64 op, 29568734.74 ns, 462.0115 us/op
+WorkloadPilot   18: 128 op, 57861480.64 ns, 452.0428 us/op
+WorkloadPilot   19: 256 op, 109803963.04 ns, 428.9217 us/op
+WorkloadPilot   20: 512 op, 229090503.31 ns, 447.4424 us/op
+WorkloadPilot   21: 1024 op, 404911116.56 ns, 395.4210 us/op
+WorkloadPilot   22: 2048 op, 771420767.44 ns, 376.6703 us/op
+WorkloadWarmup   1: 2048 op, 764351592.36 ns, 373.2186 us/op
+WorkloadWarmup   2: 2048 op, 786955083.66 ns, 384.2554 us/op
+WorkloadWarmup   3: 2048 op, 742396123.97 ns, 362.4981 us/op
+WorkloadWarmup   4: 2048 op, 832264174.54 ns, 406.3790 us/op
+WorkloadWarmup   5: 2048 op, 834442727.65 ns, 407.4427 us/op
+WorkloadWarmup   6: 2048 op, 836793041.47 ns, 408.5904 us/op
+WorkloadWarmup   7: 2048 op, 822054805.16 ns, 401.3939 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 756888206.38 ns, 369.5743 us/op
+WorkloadActual   2: 2048 op, 827512492.77 ns, 404.0588 us/op
+WorkloadActual   3: 2048 op, 862510470.66 ns, 421.1477 us/op
+WorkloadActual   4: 2048 op, 811272900.06 ns, 396.1293 us/op
+WorkloadActual   5: 2048 op, 852337933.19 ns, 416.1806 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 756888206.38 ns, 369.5743 us/op
+WorkloadResult   2: 2048 op, 827512492.77 ns, 404.0588 us/op
+WorkloadResult   3: 2048 op, 862510470.66 ns, 421.1477 us/op
+WorkloadResult   4: 2048 op, 811272900.06 ns, 396.1293 us/op
+WorkloadResult   5: 2048 op, 852337933.19 ns, 416.1806 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 401.4182 us, StdErr = 9.0999 us (2.27%); N = 5, StdDev = 20.3480 us
+Min = 369.5743 us, Q1 = 382.8518 us, Median = 404.0588 us, Q3 = 418.6642 us, Max = 421.1477 us
+IQR = 35.8123 us, LowerFence = 329.1333 us, UpperFence = 472.3827 us
+ConfidenceInterval = [323.0803 us; 479.7560 us] (CI 99.9%), Margin = 78.3379 us (19.52% of Mean)
+Skewness = -0.51, Kurtosis = 1.43, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-GVOIGH(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 440524.30 ns, 440.5243 us/op
+WorkloadJitting  1: 1 op, 206436687.21 ns, 206.4367 ms/op
+WorkloadPilot    1: 2 op, 944501.60 ns, 472.2508 us/op
+WorkloadPilot    2: 3 op, 1352570.05 ns, 450.8567 us/op
+WorkloadPilot    3: 4 op, 1751886.36 ns, 437.9716 us/op
+WorkloadPilot    4: 5 op, 1995122.87 ns, 399.0246 us/op
+WorkloadPilot    5: 6 op, 2910815.35 ns, 485.1359 us/op
+WorkloadPilot    6: 7 op, 2941447.83 ns, 420.2068 us/op
+WorkloadPilot    7: 8 op, 3400205.75 ns, 425.0257 us/op
+WorkloadPilot    8: 9 op, 3708718.62 ns, 412.0798 us/op
+WorkloadPilot    9: 10 op, 3773630.32 ns, 377.3630 us/op
+WorkloadPilot   10: 11 op, 5646587.92 ns, 513.3262 us/op
+WorkloadPilot   11: 12 op, 4772832.78 ns, 397.7361 us/op
+WorkloadPilot   12: 13 op, 5450758.83 ns, 419.2891 us/op
+WorkloadPilot   13: 14 op, 5699100.75 ns, 407.0786 us/op
+WorkloadPilot   14: 15 op, 6384684.92 ns, 425.6457 us/op
+WorkloadPilot   15: 16 op, 5876331.56 ns, 367.2707 us/op
+WorkloadPilot   16: 32 op, 12728526.54 ns, 397.7665 us/op
+WorkloadPilot   17: 64 op, 26757839.64 ns, 418.0912 us/op
+WorkloadPilot   18: 128 op, 55062984.40 ns, 430.1796 us/op
+WorkloadPilot   19: 256 op, 113437194.47 ns, 443.1140 us/op
+WorkloadPilot   20: 512 op, 195757255.07 ns, 382.3384 us/op
+WorkloadPilot   21: 1024 op, 400321714.02 ns, 390.9392 us/op
+WorkloadPilot   22: 2048 op, 849291095.03 ns, 414.6929 us/op
+WorkloadWarmup   1: 2048 op, 813603156.90 ns, 397.2672 us/op
+WorkloadWarmup   2: 2048 op, 940851590.35 ns, 459.4002 us/op
+WorkloadWarmup   3: 2048 op, 846201590.19 ns, 413.1844 us/op
+WorkloadWarmup   4: 2048 op, 879489619.05 ns, 429.4383 us/op
+WorkloadWarmup   5: 2048 op, 848934445.39 ns, 414.5188 us/op
+WorkloadWarmup   6: 2048 op, 773879024.30 ns, 377.8706 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 838238602.98 ns, 409.2962 us/op
+WorkloadActual   2: 2048 op, 860708988.85 ns, 420.2681 us/op
+WorkloadActual   3: 2048 op, 785631322.74 ns, 383.6090 us/op
+WorkloadActual   4: 2048 op, 824083477.90 ns, 402.3845 us/op
+WorkloadActual   5: 2048 op, 767328413.42 ns, 374.6721 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 838238602.98 ns, 409.2962 us/op
+WorkloadResult   2: 2048 op, 860708988.85 ns, 420.2681 us/op
+WorkloadResult   3: 2048 op, 785631322.74 ns, 383.6090 us/op
+WorkloadResult   4: 2048 op, 824083477.90 ns, 402.3845 us/op
+WorkloadResult   5: 2048 op, 767328413.42 ns, 374.6721 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 398.0460 us, StdErr = 8.3486 us (2.10%); N = 5, StdDev = 18.6680 us
+Min = 374.6721 us, Q1 = 379.1406 us, Median = 402.3845 us, Q3 = 414.7821 us, Max = 420.2681 us
+IQR = 35.6416 us, LowerFence = 325.6782 us, UpperFence = 468.2445 us
+ConfidenceInterval = [326.1759 us; 469.9161 us] (CI 99.9%), Margin = 71.8701 us (18.06% of Mean)
+Skewness = -0.1, Kurtosis = 0.99, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-BEDOHG(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 383635.40 ns, 383.6354 us/op
+WorkloadJitting  1: 1 op, 162349613.65 ns, 162.3496 ms/op
+WorkloadPilot    1: 2 op, 1177891.95 ns, 588.9460 us/op
+WorkloadPilot    2: 3 op, 1252285.13 ns, 417.4284 us/op
+WorkloadPilot    3: 4 op, 1673481.79 ns, 418.3704 us/op
+WorkloadPilot    4: 5 op, 2044353.65 ns, 408.8707 us/op
+WorkloadPilot    5: 6 op, 2461903.58 ns, 410.3173 us/op
+WorkloadPilot    6: 7 op, 2758382.27 ns, 394.0546 us/op
+WorkloadPilot    7: 8 op, 3555556.20 ns, 444.4445 us/op
+WorkloadPilot    8: 9 op, 4120798.47 ns, 457.8665 us/op
+WorkloadPilot    9: 10 op, 4390291.40 ns, 439.0291 us/op
+WorkloadPilot   10: 11 op, 4424205.93 ns, 402.2005 us/op
+WorkloadPilot   11: 12 op, 5805949.78 ns, 483.8291 us/op
+WorkloadPilot   12: 13 op, 7117311.84 ns, 547.4855 us/op
+WorkloadPilot   13: 14 op, 6862041.14 ns, 490.1458 us/op
+WorkloadPilot   14: 15 op, 6487157.88 ns, 432.4772 us/op
+WorkloadPilot   15: 16 op, 6662200.64 ns, 416.3875 us/op
+WorkloadPilot   16: 32 op, 15830794.91 ns, 494.7123 us/op
+WorkloadPilot   17: 64 op, 28221270.10 ns, 440.9573 us/op
+WorkloadPilot   18: 128 op, 56800283.86 ns, 443.7522 us/op
+WorkloadPilot   19: 256 op, 107260372.83 ns, 418.9858 us/op
+WorkloadPilot   20: 512 op, 203703102.67 ns, 397.8576 us/op
+WorkloadPilot   21: 1024 op, 441850975.15 ns, 431.4951 us/op
+WorkloadPilot   22: 2048 op, 843147823.25 ns, 411.6933 us/op
+WorkloadWarmup   1: 2048 op, 791902594.53 ns, 386.6712 us/op
+WorkloadWarmup   2: 2048 op, 807540842.40 ns, 394.3071 us/op
+WorkloadWarmup   3: 2048 op, 824928059.25 ns, 402.7969 us/op
+WorkloadWarmup   4: 2048 op, 824088947.98 ns, 402.3872 us/op
+WorkloadWarmup   5: 2048 op, 812346131.03 ns, 396.6534 us/op
+WorkloadWarmup   6: 2048 op, 874363054.01 ns, 426.9351 us/op
+WorkloadWarmup   7: 2048 op, 831709507.78 ns, 406.1082 us/op
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 769835171.71 ns, 375.8961 us/op
+WorkloadActual   2: 2048 op, 802340248.86 ns, 391.7677 us/op
+WorkloadActual   3: 2048 op, 759887272.46 ns, 371.0387 us/op
+WorkloadActual   4: 2048 op, 849041659.08 ns, 414.5711 us/op
+WorkloadActual   5: 2048 op, 857135563.69 ns, 418.5232 us/op
+// AfterActualRun
+WorkloadResult   1: 2048 op, 769835171.71 ns, 375.8961 us/op
+WorkloadResult   2: 2048 op, 802340248.86 ns, 391.7677 us/op
+WorkloadResult   3: 2048 op, 759887272.46 ns, 371.0387 us/op
+WorkloadResult   4: 2048 op, 849041659.08 ns, 414.5711 us/op
+WorkloadResult   5: 2048 op, 857135563.69 ns, 418.5232 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 394.3594 us, StdErr = 9.7053 us (2.46%); N = 5, StdDev = 21.7018 us
+Min = 371.0387 us, Q1 = 373.4674 us, Median = 391.7677 us, Q3 = 416.5472 us, Max = 418.5232 us
+IQR = 43.0798 us, LowerFence = 308.8477 us, UpperFence = 481.1668 us
+ConfidenceInterval = [310.8094 us; 477.9093 us] (CI 99.9%), Margin = 83.5499 us (21.19% of Mean)
+Skewness = 0.07, Kurtosis = 0.83, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-GOFIOI(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 425208.05 ns, 425.2081 us/op
+WorkloadJitting  1: 1 op, 219569270.80 ns, 219.5693 ms/op
+WorkloadPilot    1: 2 op, 5648775.96 ns, 2.8244 ms/op
+WorkloadPilot    2: 3 op, 7782839.03 ns, 2.5943 ms/op
+WorkloadPilot    3: 4 op, 10949289.75 ns, 2.7373 ms/op
+WorkloadPilot    4: 5 op, 13261312.96 ns, 2.6523 ms/op
+WorkloadPilot    5: 6 op, 16568891.91 ns, 2.7615 ms/op
+WorkloadPilot    6: 7 op, 18242373.70 ns, 2.6061 ms/op
+WorkloadPilot    7: 8 op, 18847000.59 ns, 2.3559 ms/op
+WorkloadPilot    8: 9 op, 23498762.12 ns, 2.6110 ms/op
+WorkloadPilot    9: 10 op, 28413452.47 ns, 2.8413 ms/op
+WorkloadPilot   10: 11 op, 47809285.07 ns, 4.3463 ms/op
+WorkloadPilot   11: 12 op, 31605794.94 ns, 2.6338 ms/op
+WorkloadPilot   12: 13 op, 31939105.54 ns, 2.4569 ms/op
+WorkloadPilot   13: 14 op, 38343118.10 ns, 2.7388 ms/op
+WorkloadPilot   14: 15 op, 36251721.71 ns, 2.4168 ms/op
+WorkloadPilot   15: 16 op, 41605113.00 ns, 2.6003 ms/op
+WorkloadPilot   16: 32 op, 73655443.63 ns, 2.3017 ms/op
+WorkloadPilot   17: 64 op, 174893251.26 ns, 2.7327 ms/op
+WorkloadPilot   18: 128 op, 303836682.18 ns, 2.3737 ms/op
+WorkloadPilot   19: 256 op, 596947618.82 ns, 2.3318 ms/op
+WorkloadWarmup   1: 256 op, 660638752.94 ns, 2.5806 ms/op
+WorkloadWarmup   2: 256 op, 697595386.46 ns, 2.7250 ms/op
+WorkloadWarmup   3: 256 op, 701173552.35 ns, 2.7390 ms/op
+WorkloadWarmup   4: 256 op, 610498117.01 ns, 2.3848 ms/op
+WorkloadWarmup   5: 256 op, 596135857.98 ns, 2.3287 ms/op
+WorkloadWarmup   6: 256 op, 582427091.95 ns, 2.2751 ms/op
+WorkloadWarmup   7: 256 op, 625803054.28 ns, 2.4445 ms/op
+WorkloadWarmup   8: 256 op, 604413922.17 ns, 2.3610 ms/op
+// BeforeActualRun
+WorkloadActual   1: 256 op, 619217799.52 ns, 2.4188 ms/op
+WorkloadActual   2: 256 op, 687420296.28 ns, 2.6852 ms/op
+WorkloadActual   3: 256 op, 690924798.35 ns, 2.6989 ms/op
+WorkloadActual   4: 256 op, 596713134.44 ns, 2.3309 ms/op
+WorkloadActual   5: 256 op, 595689134.26 ns, 2.3269 ms/op
+// AfterActualRun
+WorkloadResult   1: 256 op, 619217799.52 ns, 2.4188 ms/op
+WorkloadResult   2: 256 op, 687420296.28 ns, 2.6852 ms/op
+WorkloadResult   3: 256 op, 690924798.35 ns, 2.6989 ms/op
+WorkloadResult   4: 256 op, 596713134.44 ns, 2.3309 ms/op
+WorkloadResult   5: 256 op, 595689134.26 ns, 2.3269 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 2.4922 ms, StdErr = 0.0833 ms (3.34%); N = 5, StdDev = 0.1862 ms
+Min = 2.3269 ms, Q1 = 2.3289 ms, Median = 2.4188 ms, Q3 = 2.6921 ms, Max = 2.6989 ms
+IQR = 0.3632 ms, LowerFence = 1.7842 ms, UpperFence = 3.2368 ms
+ConfidenceInterval = [1.7752 ms; 3.2091 ms] (CI 99.9%), Margin = 0.7169 ms (28.77% of Mean)
+Skewness = 0.21, Kurtosis = 0.78, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-CMEAIK(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 574359.08 ns, 574.3591 us/op
+WorkloadJitting  1: 1 op, 188282928.92 ns, 188.2829 ms/op
+WorkloadPilot    1: 2 op, 1289846.39 ns, 644.9232 us/op
+WorkloadPilot    2: 3 op, 1947350.78 ns, 649.1169 us/op
+WorkloadPilot    3: 4 op, 2538120.12 ns, 634.5300 us/op
+WorkloadPilot    4: 5 op, 3219328.22 ns, 643.8656 us/op
+WorkloadPilot    5: 6 op, 3667510.64 ns, 611.2518 us/op
+WorkloadPilot    6: 7 op, 4894998.04 ns, 699.2854 us/op
+WorkloadPilot    7: 8 op, 4801641.90 ns, 600.2052 us/op
+WorkloadPilot    8: 9 op, 4923442.49 ns, 547.0492 us/op
+WorkloadPilot    9: 10 op, 5681231.81 ns, 568.1232 us/op
+WorkloadPilot   10: 11 op, 7332468.57 ns, 666.5881 us/op
+WorkloadPilot   11: 12 op, 7381334.68 ns, 615.1112 us/op
+WorkloadPilot   12: 13 op, 8450189.57 ns, 650.0146 us/op
+WorkloadPilot   13: 14 op, 9568639.92 ns, 683.4743 us/op
+WorkloadPilot   14: 15 op, 9193027.32 ns, 612.8685 us/op
+WorkloadPilot   15: 16 op, 9558793.77 ns, 597.4246 us/op
+WorkloadPilot   16: 32 op, 20882602.10 ns, 652.5813 us/op
+WorkloadPilot   17: 64 op, 41590890.77 ns, 649.8577 us/op
+WorkloadPilot   18: 128 op, 75205301.46 ns, 587.5414 us/op
+WorkloadPilot   19: 256 op, 137195968.04 ns, 535.9218 us/op
+WorkloadPilot   20: 512 op, 272945645.21 ns, 533.0970 us/op
+WorkloadPilot   21: 1024 op, 566050382.41 ns, 552.7836 us/op
+WorkloadWarmup   1: 1024 op, 600242798.90 ns, 586.1746 us/op
+WorkloadWarmup   2: 1024 op, 602380873.37 ns, 588.2626 us/op
+WorkloadWarmup   3: 1024 op, 639283900.04 ns, 624.3007 us/op
+WorkloadWarmup   4: 1024 op, 607034458.26 ns, 592.8071 us/op
+WorkloadWarmup   5: 1024 op, 572778588.77 ns, 559.3541 us/op
+WorkloadWarmup   6: 1024 op, 526582614.53 ns, 514.2408 us/op
+WorkloadWarmup   7: 1024 op, 545013888.55 ns, 532.2401 us/op
+WorkloadWarmup   8: 1024 op, 537256576.59 ns, 524.6646 us/op
+// BeforeActualRun
+WorkloadActual   1: 1024 op, 542922856.83 ns, 530.1981 us/op
+WorkloadActual   2: 1024 op, 579782852.15 ns, 566.1942 us/op
+WorkloadActual   3: 1024 op, 604357397.95 ns, 590.1928 us/op
+WorkloadActual   4: 1024 op, 563320809.27 ns, 550.1180 us/op
+WorkloadActual   5: 1024 op, 552964112.22 ns, 540.0040 us/op
+// AfterActualRun
+WorkloadResult   1: 1024 op, 542922856.83 ns, 530.1981 us/op
+WorkloadResult   2: 1024 op, 579782852.15 ns, 566.1942 us/op
+WorkloadResult   3: 1024 op, 604357397.95 ns, 590.1928 us/op
+WorkloadResult   4: 1024 op, 563320809.27 ns, 550.1180 us/op
+WorkloadResult   5: 1024 op, 552964112.22 ns, 540.0040 us/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 555.3414 us, StdErr = 10.5525 us (1.90%); N = 5, StdDev = 23.5961 us
+Min = 530.1981 us, Q1 = 535.1011 us, Median = 550.1180 us, Q3 = 578.1935 us, Max = 590.1928 us
+IQR = 43.0924 us, LowerFence = 470.4624 us, UpperFence = 642.8321 us
+ConfidenceInterval = [464.4985 us; 646.1843 us] (CI 99.9%), Margin = 90.8429 us (16.36% of Mean)
+Skewness = 0.36, Kurtosis = 1.25, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-LNCUWR(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 523669.61 ns, 523.6696 us/op
+WorkloadJitting  1: 1 op, 182276773.98 ns, 182.2768 ms/op
+WorkloadPilot    1: 2 op, 3609527.72 ns, 1.8048 ms/op
+WorkloadPilot    2: 3 op, 5032114.88 ns, 1.6774 ms/op
+WorkloadPilot    3: 4 op, 7371853.20 ns, 1.8430 ms/op
+WorkloadPilot    4: 5 op, 7651192.28 ns, 1.5302 ms/op
+WorkloadPilot    5: 6 op, 9086542.97 ns, 1.5144 ms/op
+WorkloadPilot    6: 7 op, 10990497.73 ns, 1.5701 ms/op
+WorkloadPilot    7: 8 op, 13130030.88 ns, 1.6413 ms/op
+WorkloadPilot    8: 9 op, 14166065.26 ns, 1.5740 ms/op
+WorkloadPilot    9: 10 op, 18604493.42 ns, 1.8604 ms/op
+WorkloadPilot   10: 11 op, 15457005.67 ns, 1.4052 ms/op
+WorkloadPilot   11: 12 op, 18205177.11 ns, 1.5171 ms/op
+WorkloadPilot   12: 13 op, 19318522.04 ns, 1.4860 ms/op
+WorkloadPilot   13: 14 op, 21420129.26 ns, 1.5300 ms/op
+WorkloadPilot   14: 15 op, 25050807.99 ns, 1.6701 ms/op
+WorkloadPilot   15: 16 op, 22373018.32 ns, 1.3983 ms/op
+WorkloadPilot   16: 32 op, 47238937.39 ns, 1.4762 ms/op
+WorkloadPilot   17: 64 op, 93142444.33 ns, 1.4554 ms/op
+WorkloadPilot   18: 128 op, 173489627.08 ns, 1.3554 ms/op
+WorkloadPilot   19: 256 op, 348875186.12 ns, 1.3628 ms/op
+WorkloadPilot   20: 512 op, 717347868.69 ns, 1.4011 ms/op
+WorkloadWarmup   1: 512 op, 782649031.59 ns, 1.5286 ms/op
+WorkloadWarmup   2: 512 op, 802605365.72 ns, 1.5676 ms/op
+WorkloadWarmup   3: 512 op, 699013597.54 ns, 1.3653 ms/op
+WorkloadWarmup   4: 512 op, 693501573.74 ns, 1.3545 ms/op
+WorkloadWarmup   5: 512 op, 696534189.68 ns, 1.3604 ms/op
+WorkloadWarmup   6: 512 op, 699589415.31 ns, 1.3664 ms/op
+WorkloadWarmup   7: 512 op, 705655376.53 ns, 1.3782 ms/op
+WorkloadWarmup   8: 512 op, 833433679.03 ns, 1.6278 ms/op
+// BeforeActualRun
+WorkloadActual   1: 512 op, 817333755.87 ns, 1.5964 ms/op
+WorkloadActual   2: 512 op, 762143865.46 ns, 1.4886 ms/op
+WorkloadActual   3: 512 op, 724672679.14 ns, 1.4154 ms/op
+WorkloadActual   4: 512 op, 698946497.81 ns, 1.3651 ms/op
+WorkloadActual   5: 512 op, 700743238.88 ns, 1.3686 ms/op
+// AfterActualRun
+WorkloadResult   1: 512 op, 817333755.87 ns, 1.5964 ms/op
+WorkloadResult   2: 512 op, 762143865.46 ns, 1.4886 ms/op
+WorkloadResult   3: 512 op, 724672679.14 ns, 1.4154 ms/op
+WorkloadResult   4: 512 op, 698946497.81 ns, 1.3651 ms/op
+WorkloadResult   5: 512 op, 700743238.88 ns, 1.3686 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 1.4468 ms, StdErr = 0.0435 ms (3.01%); N = 5, StdDev = 0.0973 ms
+Min = 1.3651 ms, Q1 = 1.3669 ms, Median = 1.4154 ms, Q3 = 1.5425 ms, Max = 1.5964 ms
+IQR = 0.1756 ms, LowerFence = 1.1035 ms, UpperFence = 1.8058 ms
+ConfidenceInterval = [1.0722 ms; 1.8214 ms] (CI 99.9%), Margin = 0.3746 ms (25.89% of Mean)
+Skewness = 0.51, Kurtosis = 1.31, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-QPUCCN(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 526586.99 ns, 526.5870 us/op
+WorkloadJitting  1: 1 op, 172367165.33 ns, 172.3672 ms/op
+WorkloadPilot    1: 2 op, 3502678.70 ns, 1.7513 ms/op
+WorkloadPilot    2: 3 op, 4572992.29 ns, 1.5243 ms/op
+WorkloadPilot    3: 4 op, 6255226.21 ns, 1.5638 ms/op
+WorkloadPilot    4: 5 op, 7706257.82 ns, 1.5413 ms/op
+WorkloadPilot    5: 6 op, 9315921.93 ns, 1.5527 ms/op
+WorkloadPilot    6: 7 op, 11476970.75 ns, 1.6396 ms/op
+WorkloadPilot    7: 8 op, 14494270.45 ns, 1.8118 ms/op
+WorkloadPilot    8: 9 op, 13795922.74 ns, 1.5329 ms/op
+WorkloadPilot    9: 10 op, 17149450.42 ns, 1.7149 ms/op
+WorkloadPilot   10: 11 op, 17976527.49 ns, 1.6342 ms/op
+WorkloadPilot   11: 12 op, 18376573.15 ns, 1.5314 ms/op
+WorkloadPilot   12: 13 op, 22939719.28 ns, 1.7646 ms/op
+WorkloadPilot   13: 14 op, 19749564.85 ns, 1.4107 ms/op
+WorkloadPilot   14: 15 op, 23572425.95 ns, 1.5715 ms/op
+WorkloadPilot   15: 16 op, 25391412.04 ns, 1.5870 ms/op
+WorkloadPilot   16: 32 op, 54591827.62 ns, 1.7060 ms/op
+WorkloadPilot   17: 64 op, 109610686.65 ns, 1.7127 ms/op
+WorkloadPilot   18: 128 op, 558298540.54 ns, 4.3617 ms/op
+WorkloadWarmup   1: 128 op, 160622889.69 ns, 1.2549 ms/op
+WorkloadWarmup   2: 128 op, 170029979.72 ns, 1.3284 ms/op
+WorkloadWarmup   3: 128 op, 218881863.27 ns, 1.7100 ms/op
+WorkloadWarmup   4: 128 op, 159958821.19 ns, 1.2497 ms/op
+WorkloadWarmup   5: 128 op, 158720393.61 ns, 1.2400 ms/op
+WorkloadWarmup   6: 128 op, 161945921.27 ns, 1.2652 ms/op
+WorkloadWarmup   7: 128 op, 165421249.54 ns, 1.2924 ms/op
+WorkloadWarmup   8: 128 op, 155128005.49 ns, 1.2119 ms/op
+// BeforeActualRun
+WorkloadActual   1: 128 op, 163538810.45 ns, 1.2776 ms/op
+WorkloadActual   2: 128 op, 160058741.44 ns, 1.2505 ms/op
+WorkloadActual   3: 128 op, 162230730.44 ns, 1.2674 ms/op
+WorkloadActual   4: 128 op, 159853430.86 ns, 1.2489 ms/op
+WorkloadActual   5: 128 op, 163764907.35 ns, 1.2794 ms/op
+// AfterActualRun
+WorkloadResult   1: 128 op, 163538810.45 ns, 1.2776 ms/op
+WorkloadResult   2: 128 op, 160058741.44 ns, 1.2505 ms/op
+WorkloadResult   3: 128 op, 162230730.44 ns, 1.2674 ms/op
+WorkloadResult   4: 128 op, 159853430.86 ns, 1.2489 ms/op
+WorkloadResult   5: 128 op, 163764907.35 ns, 1.2794 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 1.2648 ms, StdErr = 0.0065 ms (0.51%); N = 5, StdDev = 0.0145 ms
+Min = 1.2489 ms, Q1 = 1.2497 ms, Median = 1.2674 ms, Q3 = 1.2785 ms, Max = 1.2794 ms
+IQR = 0.0289 ms, LowerFence = 1.2063 ms, UpperFence = 1.3218 ms
+ConfidenceInterval = [1.2088 ms; 1.3207 ms] (CI 99.9%), Margin = 0.0560 ms (4.43% of Mean)
+Skewness = -0.11, Kurtosis = 0.8, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-QZQSOP(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 577641.13 ns, 577.6411 us/op
+WorkloadJitting  1: 1 op, 232532646.39 ns, 232.5326 ms/op
+WorkloadPilot    1: 2 op, 37690354.45 ns, 18.8452 ms/op
+WorkloadPilot    2: 3 op, 58386244.26 ns, 19.4621 ms/op
+WorkloadPilot    3: 4 op, 79053324.96 ns, 19.7633 ms/op
+WorkloadPilot    4: 5 op, 108662903.00 ns, 21.7326 ms/op
+WorkloadPilot    5: 6 op, 133520069.93 ns, 22.2533 ms/op
+WorkloadPilot    6: 7 op, 153207275.80 ns, 21.8868 ms/op
+WorkloadPilot    7: 8 op, 179274061.18 ns, 22.4093 ms/op
+WorkloadPilot    8: 9 op, 198313608.81 ns, 22.0348 ms/op
+WorkloadPilot    9: 10 op, 219458045.71 ns, 21.9458 ms/op
+WorkloadPilot   10: 11 op, 243476466.05 ns, 22.1342 ms/op
+WorkloadPilot   11: 12 op, 281585099.78 ns, 23.4654 ms/op
+WorkloadPilot   12: 13 op, 250858894.74 ns, 19.2968 ms/op
+WorkloadPilot   13: 14 op, 285891881.19 ns, 20.4208 ms/op
+WorkloadPilot   14: 15 op, 264547603.79 ns, 17.6365 ms/op
+WorkloadPilot   15: 16 op, 302435610.70 ns, 18.9022 ms/op
+WorkloadPilot   16: 32 op, 600006126.50 ns, 18.7502 ms/op
+WorkloadWarmup   1: 32 op, 561228318.86 ns, 17.5384 ms/op
+WorkloadWarmup   2: 32 op, 557959395.18 ns, 17.4362 ms/op
+WorkloadWarmup   3: 32 op, 570346953.00 ns, 17.8233 ms/op
+WorkloadWarmup   4: 32 op, 652588244.35 ns, 20.3934 ms/op
+WorkloadWarmup   5: 32 op, 674674630.14 ns, 21.0836 ms/op
+WorkloadWarmup   6: 32 op, 609638948.77 ns, 19.0512 ms/op
+WorkloadWarmup   7: 32 op, 591032267.31 ns, 18.4698 ms/op
+WorkloadWarmup   8: 32 op, 550684544.85 ns, 17.2089 ms/op
+// BeforeActualRun
+WorkloadActual   1: 32 op, 581977450.84 ns, 18.1868 ms/op
+WorkloadActual   2: 32 op, 584999126.61 ns, 18.2812 ms/op
+WorkloadActual   3: 32 op, 572437255.37 ns, 17.8887 ms/op
+WorkloadActual   4: 32 op, 642105735.31 ns, 20.0658 ms/op
+WorkloadActual   5: 32 op, 676511485.18 ns, 21.1410 ms/op
+// AfterActualRun
+WorkloadResult   1: 32 op, 581977450.84 ns, 18.1868 ms/op
+WorkloadResult   2: 32 op, 584999126.61 ns, 18.2812 ms/op
+WorkloadResult   3: 32 op, 572437255.37 ns, 17.8887 ms/op
+WorkloadResult   4: 32 op, 642105735.31 ns, 20.0658 ms/op
+WorkloadResult   5: 32 op, 676511485.18 ns, 21.1410 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 19.1127 ms, StdErr = 0.6352 ms (3.32%); N = 5, StdDev = 1.4203 ms
+Min = 17.8887 ms, Q1 = 18.0377 ms, Median = 18.2812 ms, Q3 = 20.6034 ms, Max = 21.1410 ms
+IQR = 2.5657 ms, LowerFence = 14.1892 ms, UpperFence = 24.4519 ms
+ConfidenceInterval = [13.6446 ms; 24.5808 ms] (CI 99.9%), Margin = 5.4681 ms (28.61% of Mean)
+Skewness = 0.42, Kurtosis = 1.04, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-MHMWRX(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 464957.35 ns, 464.9573 us/op
+WorkloadJitting  1: 1 op, 191616034.94 ns, 191.6160 ms/op
+WorkloadPilot    1: 2 op, 4292194.51 ns, 2.1461 ms/op
+WorkloadPilot    2: 3 op, 5954006.78 ns, 1.9847 ms/op
+WorkloadPilot    3: 4 op, 8932651.20 ns, 2.2332 ms/op
+WorkloadPilot    4: 5 op, 11244309.74 ns, 2.2489 ms/op
+WorkloadPilot    5: 6 op, 13654429.84 ns, 2.2757 ms/op
+WorkloadPilot    6: 7 op, 19532220.09 ns, 2.7903 ms/op
+WorkloadPilot    7: 8 op, 20492037.92 ns, 2.5615 ms/op
+WorkloadPilot    8: 9 op, 23664688.08 ns, 2.6294 ms/op
+WorkloadPilot    9: 10 op, 22007251.88 ns, 2.2007 ms/op
+WorkloadPilot   10: 11 op, 23643537.07 ns, 2.1494 ms/op
+WorkloadPilot   11: 12 op, 27820130.43 ns, 2.3183 ms/op
+WorkloadPilot   12: 13 op, 29185828.68 ns, 2.2451 ms/op
+WorkloadPilot   13: 14 op, 31558022.85 ns, 2.2541 ms/op
+WorkloadPilot   14: 15 op, 33791276.82 ns, 2.2528 ms/op
+WorkloadPilot   15: 16 op, 37743231.95 ns, 2.3590 ms/op
+WorkloadPilot   16: 32 op, 74968264.38 ns, 2.3428 ms/op
+WorkloadPilot   17: 64 op, 138750931.28 ns, 2.1680 ms/op
+WorkloadPilot   18: 128 op, 263621335.82 ns, 2.0595 ms/op
+WorkloadPilot   19: 256 op, 489624157.65 ns, 1.9126 ms/op
+WorkloadPilot   20: 512 op, 1019249963.62 ns, 1.9907 ms/op
+WorkloadWarmup   1: 512 op, 1214039378.06 ns, 2.3712 ms/op
+WorkloadWarmup   2: 512 op, 1143123718.40 ns, 2.2327 ms/op
+WorkloadWarmup   3: 512 op, 997139509.45 ns, 1.9475 ms/op
+WorkloadWarmup   4: 512 op, 1013403535.21 ns, 1.9793 ms/op
+WorkloadWarmup   5: 512 op, 981806492.41 ns, 1.9176 ms/op
+WorkloadWarmup   6: 512 op, 1122758586.49 ns, 2.1929 ms/op
+WorkloadWarmup   7: 512 op, 1051820317.14 ns, 2.0543 ms/op
+// BeforeActualRun
+WorkloadActual   1: 512 op, 1108182994.08 ns, 2.1644 ms/op
+WorkloadActual   2: 512 op, 981836760.22 ns, 1.9176 ms/op
+WorkloadActual   3: 512 op, 992571622.58 ns, 1.9386 ms/op
+WorkloadActual   4: 512 op, 1137587990.90 ns, 2.2219 ms/op
+WorkloadActual   5: 512 op, 1010707147.25 ns, 1.9740 ms/op
+// AfterActualRun
+WorkloadResult   1: 512 op, 1108182994.08 ns, 2.1644 ms/op
+WorkloadResult   2: 512 op, 981836760.22 ns, 1.9176 ms/op
+WorkloadResult   3: 512 op, 992571622.58 ns, 1.9386 ms/op
+WorkloadResult   4: 512 op, 1137587990.90 ns, 2.2219 ms/op
+WorkloadResult   5: 512 op, 1010707147.25 ns, 1.9740 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 2.0433 ms, StdErr = 0.0625 ms (3.06%); N = 5, StdDev = 0.1397 ms
+Min = 1.9176 ms, Q1 = 1.9281 ms, Median = 1.9740 ms, Q3 = 2.1931 ms, Max = 2.2219 ms
+IQR = 0.2650 ms, LowerFence = 1.5306 ms, UpperFence = 2.5906 ms
+ConfidenceInterval = [1.5054 ms; 2.5813 ms] (CI 99.9%), Margin = 0.5379 ms (26.33% of Mean)
+Skewness = 0.29, Kurtosis = 0.85, MValue = 3.33
+
+// **************************
+// Benchmark: Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-FRNWPK(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 448182.42 ns, 448.1824 us/op
+WorkloadJitting  1: 1 op, 202937655.24 ns, 202.9377 ms/op
+WorkloadPilot    1: 2 op, 16518567.11 ns, 8.2593 ms/op
+WorkloadPilot    2: 3 op, 24291559.98 ns, 8.0972 ms/op
+WorkloadPilot    3: 4 op, 49584875.14 ns, 12.3962 ms/op
+WorkloadPilot    4: 5 op, 54803702.30 ns, 10.9607 ms/op
+WorkloadPilot    5: 6 op, 63243681.05 ns, 10.5406 ms/op
+WorkloadPilot    6: 7 op, 68683135.03 ns, 9.8119 ms/op
+WorkloadPilot    7: 8 op, 82794134.75 ns, 10.3493 ms/op
+WorkloadPilot    8: 9 op, 90422717.34 ns, 10.0470 ms/op
+WorkloadPilot    9: 10 op, 98310582.03 ns, 9.8311 ms/op
+WorkloadPilot   10: 11 op, 105527814.11 ns, 9.5934 ms/op
+WorkloadPilot   11: 12 op, 117355964.42 ns, 9.7797 ms/op
+WorkloadPilot   12: 13 op, 139485746.23 ns, 10.7297 ms/op
+WorkloadPilot   13: 14 op, 163200394.43 ns, 11.6572 ms/op
+WorkloadPilot   14: 15 op, 150177941.91 ns, 10.0119 ms/op
+WorkloadPilot   15: 16 op, 163785693.68 ns, 10.2366 ms/op
+WorkloadPilot   16: 32 op, 344352518.63 ns, 10.7610 ms/op
+WorkloadPilot   17: 64 op, 752949379.46 ns, 11.7648 ms/op
+WorkloadWarmup   1: 64 op, 720034410.49 ns, 11.2505 ms/op
+WorkloadWarmup   2: 64 op, 593043071.10 ns, 9.2663 ms/op
+WorkloadWarmup   3: 64 op, 587123708.19 ns, 9.1738 ms/op
+WorkloadWarmup   4: 64 op, 617622722.30 ns, 9.6504 ms/op
+WorkloadWarmup   5: 64 op, 593163777.67 ns, 9.2682 ms/op
+WorkloadWarmup   6: 64 op, 601498730.76 ns, 9.3984 ms/op
+WorkloadWarmup   7: 64 op, 661538764.50 ns, 10.3365 ms/op
+WorkloadWarmup   8: 64 op, 756256229.06 ns, 11.8165 ms/op
+// BeforeActualRun
+WorkloadActual   1: 64 op, 690393105.94 ns, 10.7874 ms/op
+WorkloadActual   2: 64 op, 629749174.66 ns, 9.8398 ms/op
+WorkloadActual   3: 64 op, 630173653.36 ns, 9.8465 ms/op
+WorkloadActual   4: 64 op, 612777684.38 ns, 9.5747 ms/op
+WorkloadActual   5: 64 op, 606975016.66 ns, 9.4840 ms/op
+// AfterActualRun
+WorkloadResult   1: 64 op, 690393105.94 ns, 10.7874 ms/op
+WorkloadResult   2: 64 op, 629749174.66 ns, 9.8398 ms/op
+WorkloadResult   3: 64 op, 630173653.36 ns, 9.8465 ms/op
+WorkloadResult   4: 64 op, 612777684.38 ns, 9.5747 ms/op
+WorkloadResult   5: 64 op, 606975016.66 ns, 9.4840 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 9.9065 ms, StdErr = 0.2316 ms (2.34%); N = 5, StdDev = 0.5178 ms
+Min = 9.4840 ms, Q1 = 9.5293 ms, Median = 9.8398 ms, Q3 = 10.3169 ms, Max = 10.7874 ms
+IQR = 0.7876 ms, LowerFence = 8.3479 ms, UpperFence = 11.4983 ms
+ConfidenceInterval = [7.9128 ms; 11.9001 ms] (CI 99.9%), Margin = 1.9937 ms (20.12% of Mean)
+Skewness = 0.82, Kurtosis = 1.8, MValue = 2.5
+
+// **************************
+// Benchmark: Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-USVMXX(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 464592.68 ns, 464.5927 us/op
+WorkloadJitting  1: 1 op, 192134599.14 ns, 192.1346 ms/op
+WorkloadPilot    1: 2 op, 19670795.61 ns, 9.8354 ms/op
+WorkloadPilot    2: 3 op, 31670706.63 ns, 10.5569 ms/op
+WorkloadPilot    3: 4 op, 42858127.47 ns, 10.7145 ms/op
+WorkloadPilot    4: 5 op, 51682835.63 ns, 10.3366 ms/op
+WorkloadPilot    5: 6 op, 63637891.95 ns, 10.6063 ms/op
+WorkloadPilot    6: 7 op, 73498634.48 ns, 10.4998 ms/op
+WorkloadPilot    7: 8 op, 86696494.44 ns, 10.8371 ms/op
+WorkloadPilot    8: 9 op, 91265475.33 ns, 10.1406 ms/op
+WorkloadPilot    9: 10 op, 93639492.86 ns, 9.3639 ms/op
+WorkloadPilot   10: 11 op, 108726720.68 ns, 9.8842 ms/op
+WorkloadPilot   11: 12 op, 111460305.22 ns, 9.2884 ms/op
+WorkloadPilot   12: 13 op, 124942245.00 ns, 9.6109 ms/op
+WorkloadPilot   13: 14 op, 135740560.36 ns, 9.6958 ms/op
+WorkloadPilot   14: 15 op, 151636631.64 ns, 10.1091 ms/op
+WorkloadPilot   15: 16 op, 162496941.31 ns, 10.1561 ms/op
+WorkloadPilot   16: 32 op, 273567047.03 ns, 8.5490 ms/op
+WorkloadPilot   17: 64 op, 526310933.57 ns, 8.2236 ms/op
+WorkloadWarmup   1: 64 op, 469807857.74 ns, 7.3407 ms/op
+WorkloadWarmup   2: 64 op, 449285552.01 ns, 7.0201 ms/op
+WorkloadWarmup   3: 64 op, 452377609.55 ns, 7.0684 ms/op
+WorkloadWarmup   4: 64 op, 476813944.49 ns, 7.4502 ms/op
+WorkloadWarmup   5: 64 op, 479492098.82 ns, 7.4921 ms/op
+WorkloadWarmup   6: 64 op, 581032949.25 ns, 9.0786 ms/op
+WorkloadWarmup   7: 64 op, 554073810.43 ns, 8.6574 ms/op
+WorkloadWarmup   8: 64 op, 568375533.83 ns, 8.8809 ms/op
+// BeforeActualRun
+WorkloadActual   1: 64 op, 454273541.52 ns, 7.0980 ms/op
+WorkloadActual   2: 64 op, 460421554.04 ns, 7.1941 ms/op
+WorkloadActual   3: 64 op, 467002432.73 ns, 7.2969 ms/op
+WorkloadActual   4: 64 op, 455658932.09 ns, 7.1197 ms/op
+WorkloadActual   5: 64 op, 472368587.55 ns, 7.3808 ms/op
+// AfterActualRun
+WorkloadResult   1: 64 op, 454273541.52 ns, 7.0980 ms/op
+WorkloadResult   2: 64 op, 460421554.04 ns, 7.1941 ms/op
+WorkloadResult   3: 64 op, 467002432.73 ns, 7.2969 ms/op
+WorkloadResult   4: 64 op, 455658932.09 ns, 7.1197 ms/op
+WorkloadResult   5: 64 op, 472368587.55 ns, 7.3808 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 7.2179 ms, StdErr = 0.0536 ms (0.74%); N = 5, StdDev = 0.1197 ms
+Min = 7.0980 ms, Q1 = 7.1088 ms, Median = 7.1941 ms, Q3 = 7.3388 ms, Max = 7.3808 ms
+IQR = 0.2300 ms, LowerFence = 6.7639 ms, UpperFence = 7.6838 ms
+ConfidenceInterval = [6.7569 ms; 7.6789 ms] (CI 99.9%), Margin = 0.4610 ms (6.39% of Mean)
+Skewness = 0.25, Kurtosis = 1.01, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-IUDXHF(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 557584.15 ns, 557.5841 us/op
+WorkloadJitting  1: 1 op, 378266325.38 ns, 378.2663 ms/op
+WorkloadWarmup   1: 1 op, 218206854.60 ns, 218.2069 ms/op
+WorkloadWarmup   2: 1 op, 218062079.65 ns, 218.0621 ms/op
+WorkloadWarmup   3: 1 op, 233048657.88 ns, 233.0487 ms/op
+WorkloadWarmup   4: 1 op, 205487809.55 ns, 205.4878 ms/op
+WorkloadWarmup   5: 1 op, 236106436.21 ns, 236.1064 ms/op
+WorkloadWarmup   6: 1 op, 213626204.19 ns, 213.6262 ms/op
+// BeforeActualRun
+WorkloadActual   1: 1 op, 189520991.82 ns, 189.5210 ms/op
+WorkloadActual   2: 1 op, 176954015.17 ns, 176.9540 ms/op
+WorkloadActual   3: 1 op, 182776010.53 ns, 182.7760 ms/op
+WorkloadActual   4: 1 op, 175360396.65 ns, 175.3604 ms/op
+WorkloadActual   5: 1 op, 178572796.09 ns, 178.5728 ms/op
+// AfterActualRun
+WorkloadResult   1: 1 op, 189520991.82 ns, 189.5210 ms/op
+WorkloadResult   2: 1 op, 176954015.17 ns, 176.9540 ms/op
+WorkloadResult   3: 1 op, 182776010.53 ns, 182.7760 ms/op
+WorkloadResult   4: 1 op, 175360396.65 ns, 175.3604 ms/op
+WorkloadResult   5: 1 op, 178572796.09 ns, 178.5728 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 180.6368 ms, StdErr = 2.5413 ms (1.41%); N = 5, StdDev = 5.6826 ms
+Min = 175.3604 ms, Q1 = 176.1572 ms, Median = 178.5728 ms, Q3 = 186.1485 ms, Max = 189.5210 ms
+IQR = 9.9913 ms, LowerFence = 161.1703 ms, UpperFence = 201.1354 ms
+ConfidenceInterval = [158.7593 ms; 202.5144 ms] (CI 99.9%), Margin = 21.8776 ms (12.11% of Mean)
+Skewness = 0.55, Kurtosis = 1.39, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-AEXWSN(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 401869.02 ns, 401.8690 us/op
+WorkloadJitting  1: 1 op, 183184078.99 ns, 183.1841 ms/op
+WorkloadPilot    1: 2 op, 37453682.04 ns, 18.7268 ms/op
+WorkloadPilot    2: 3 op, 65119556.03 ns, 21.7065 ms/op
+WorkloadPilot    3: 4 op, 71029802.13 ns, 17.7575 ms/op
+WorkloadPilot    4: 5 op, 83285713.19 ns, 16.6571 ms/op
+WorkloadPilot    5: 6 op, 119074665.59 ns, 19.8458 ms/op
+WorkloadPilot    6: 7 op, 129517425.33 ns, 18.5025 ms/op
+WorkloadPilot    7: 8 op, 151477634.46 ns, 18.9347 ms/op
+WorkloadPilot    8: 9 op, 156374455.86 ns, 17.3749 ms/op
+WorkloadPilot    9: 10 op, 192157208.83 ns, 19.2157 ms/op
+WorkloadPilot   10: 11 op, 247483486.72 ns, 22.4985 ms/op
+WorkloadPilot   11: 12 op, 258435329.17 ns, 21.5363 ms/op
+WorkloadPilot   12: 13 op, 287053362.88 ns, 22.0810 ms/op
+WorkloadPilot   13: 14 op, 304360351.79 ns, 21.7400 ms/op
+WorkloadPilot   14: 15 op, 321476981.69 ns, 21.4318 ms/op
+WorkloadPilot   15: 16 op, 287811881.54 ns, 17.9882 ms/op
+WorkloadPilot   16: 32 op, 566334462.24 ns, 17.6980 ms/op
+WorkloadWarmup   1: 32 op, 568438986.84 ns, 17.7637 ms/op
+WorkloadWarmup   2: 32 op, 545956566.78 ns, 17.0611 ms/op
+WorkloadWarmup   3: 32 op, 578940823.51 ns, 18.0919 ms/op
+WorkloadWarmup   4: 32 op, 566691111.88 ns, 17.7091 ms/op
+WorkloadWarmup   5: 32 op, 721261168.55 ns, 22.5394 ms/op
+WorkloadWarmup   6: 32 op, 683055167.28 ns, 21.3455 ms/op
+// BeforeActualRun
+WorkloadActual   1: 32 op, 558869617.57 ns, 17.4647 ms/op
+WorkloadActual   2: 32 op, 553046163.52 ns, 17.2827 ms/op
+WorkloadActual   3: 32 op, 576598532.49 ns, 18.0187 ms/op
+WorkloadActual   4: 32 op, 560022711.80 ns, 17.5007 ms/op
+WorkloadActual   5: 32 op, 548778766.73 ns, 17.1493 ms/op
+// AfterActualRun
+WorkloadResult   1: 32 op, 558869617.57 ns, 17.4647 ms/op
+WorkloadResult   2: 32 op, 553046163.52 ns, 17.2827 ms/op
+WorkloadResult   3: 32 op, 576598532.49 ns, 18.0187 ms/op
+WorkloadResult   4: 32 op, 560022711.80 ns, 17.5007 ms/op
+WorkloadResult   5: 32 op, 548778766.73 ns, 17.1493 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 17.4832 ms, StdErr = 0.1482 ms (0.85%); N = 5, StdDev = 0.3313 ms
+Min = 17.1493 ms, Q1 = 17.2160 ms, Median = 17.4647 ms, Q3 = 17.7597 ms, Max = 18.0187 ms
+IQR = 0.5437 ms, LowerFence = 16.4005 ms, UpperFence = 18.5752 ms
+ConfidenceInterval = [16.2077 ms; 18.7588 ms] (CI 99.9%), Margin = 1.2755 ms (7.30% of Mean)
+Skewness = 0.6, Kurtosis = 1.6, MValue = 2
+
+// **************************
+// Benchmark: Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-ZFPNUU(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 547373.32 ns, 547.3733 us/op
+WorkloadJitting  1: 1 op, 326980982.70 ns, 326.9810 ms/op
+WorkloadPilot    1: 2 op, 214210044.76 ns, 107.1050 ms/op
+WorkloadPilot    2: 3 op, 316414599.00 ns, 105.4715 ms/op
+WorkloadPilot    3: 4 op, 374184911.53 ns, 93.5462 ms/op
+WorkloadPilot    4: 5 op, 447042816.55 ns, 89.4086 ms/op
+WorkloadPilot    5: 6 op, 557071417.81 ns, 92.8452 ms/op
+WorkloadWarmup   1: 6 op, 546038253.41 ns, 91.0064 ms/op
+WorkloadWarmup   2: 6 op, 526772244.20 ns, 87.7954 ms/op
+WorkloadWarmup   3: 6 op, 512436970.93 ns, 85.4062 ms/op
+WorkloadWarmup   4: 6 op, 556633810.90 ns, 92.7723 ms/op
+WorkloadWarmup   5: 6 op, 746408614.73 ns, 124.4014 ms/op
+WorkloadWarmup   6: 6 op, 729468486.28 ns, 121.5781 ms/op
+WorkloadWarmup   7: 6 op, 657346125.56 ns, 109.5577 ms/op
+WorkloadWarmup   8: 6 op, 539913944.60 ns, 89.9857 ms/op
+// BeforeActualRun
+WorkloadActual   1: 6 op, 613068692.98 ns, 102.1781 ms/op
+WorkloadActual   2: 6 op, 633020651.04 ns, 105.5034 ms/op
+WorkloadActual   3: 6 op, 568202314.43 ns, 94.7004 ms/op
+WorkloadActual   4: 6 op, 616068488.40 ns, 102.6781 ms/op
+WorkloadActual   5: 6 op, 695146611.08 ns, 115.8578 ms/op
+// AfterActualRun
+WorkloadResult   1: 6 op, 613068692.98 ns, 102.1781 ms/op
+WorkloadResult   2: 6 op, 633020651.04 ns, 105.5034 ms/op
+WorkloadResult   3: 6 op, 568202314.43 ns, 94.7004 ms/op
+WorkloadResult   4: 6 op, 616068488.40 ns, 102.6781 ms/op
+WorkloadResult   5: 6 op, 695146611.08 ns, 115.8578 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 104.1836 ms, StdErr = 3.4223 ms (3.28%); N = 5, StdDev = 7.6526 ms
+Min = 94.7004 ms, Q1 = 98.4393 ms, Median = 102.6781 ms, Q3 = 110.6806 ms, Max = 115.8578 ms
+IQR = 12.2414 ms, LowerFence = 80.0772 ms, UpperFence = 129.0426 ms
+ConfidenceInterval = [74.7218 ms; 133.6453 ms] (CI 99.9%), Margin = 29.4618 ms (28.28% of Mean)
+Skewness = 0.33, Kurtosis = 1.56, MValue = 2.67
+
+// **************************
+// Benchmark: Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-HMBWYK(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3)
+OverheadJitting  1: 1 op, 567794.98 ns, 567.7950 us/op
+WorkloadJitting  1: 1 op, 213425999.03 ns, 213.4260 ms/op
+WorkloadPilot    1: 2 op, 145372288.61 ns, 72.6861 ms/op
+WorkloadPilot    2: 3 op, 196478941.81 ns, 65.4930 ms/op
+WorkloadPilot    3: 4 op, 259079705.36 ns, 64.7699 ms/op
+WorkloadPilot    4: 5 op, 335681702.23 ns, 67.1363 ms/op
+WorkloadPilot    5: 6 op, 443734872.93 ns, 73.9558 ms/op
+WorkloadPilot    6: 7 op, 467421076.68 ns, 66.7744 ms/op
+WorkloadPilot    7: 8 op, 574284321.24 ns, 71.7855 ms/op
+WorkloadWarmup   1: 8 op, 677986220.49 ns, 84.7483 ms/op
+WorkloadWarmup   2: 8 op, 682043201.28 ns, 85.2554 ms/op
+WorkloadWarmup   3: 8 op, 539032531.33 ns, 67.3791 ms/op
+WorkloadWarmup   4: 8 op, 560231304.43 ns, 70.0289 ms/op
+WorkloadWarmup   5: 8 op, 676895849.92 ns, 84.6120 ms/op
+WorkloadWarmup   6: 8 op, 533146718.29 ns, 66.6433 ms/op
+// BeforeActualRun
+WorkloadActual   1: 8 op, 519486089.02 ns, 64.9358 ms/op
+WorkloadActual   2: 8 op, 567140388.31 ns, 70.8925 ms/op
+WorkloadActual   3: 8 op, 674307040.33 ns, 84.2884 ms/op
+WorkloadActual   4: 8 op, 672866219.55 ns, 84.1083 ms/op
+WorkloadActual   5: 8 op, 650122329.37 ns, 81.2653 ms/op
+// AfterActualRun
+WorkloadResult   1: 8 op, 519486089.02 ns, 64.9358 ms/op
+WorkloadResult   2: 8 op, 567140388.31 ns, 70.8925 ms/op
+WorkloadResult   3: 8 op, 674307040.33 ns, 84.2884 ms/op
+WorkloadResult   4: 8 op, 672866219.55 ns, 84.1083 ms/op
+WorkloadResult   5: 8 op, 650122329.37 ns, 81.2653 ms/op
+GC:  0 0 0 0 0
+// AfterAll
+
+Mean = 77.0981 ms, StdErr = 3.9028 ms (5.06%); N = 5, StdDev = 8.7270 ms
+Min = 64.9358 ms, Q1 = 67.9142 ms, Median = 81.2653 ms, Q3 = 84.1983 ms, Max = 84.2884 ms
+IQR = 16.2842 ms, LowerFence = 43.4879 ms, UpperFence = 108.6246 ms
+ConfidenceInterval = [43.5000 ms; 110.6961 ms] (CI 99.9%), Margin = 33.5980 ms (43.58% of Mean)
+Skewness = -0.38, Kurtosis = 0.99, MValue = 3.33
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Serializers-report.csv
+  BenchmarkDotNet.Artifacts\results\Serializers-report-github.md
+  BenchmarkDotNet.Artifacts\results\Serializers-report.html
+  BenchmarkDotNet.Artifacts\results\Serializers-report-default.md
+  BenchmarkDotNet.Artifacts\results\Serializers-report.asciidoc
+  BenchmarkDotNet.Artifacts\results\Serializers-report.csv
+  BenchmarkDotNet.Artifacts\results\Serializers-measurements.csv
+  BuildPlots.R
+RPlotExporter couldn't find Rscript.exe in your PATH and no R_HOME environment variable is defined
+
+// * Detailed results *
+Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 416.1171 us, StdErr = 1.5027 us (0.36%); N = 5, StdDev = 3.3600 us
+Min = 410.3961 us, Q1 = 413.2625 us, Median = 417.0410 us, Q3 = 418.5096 us, Max = 418.7620 us
+IQR = 5.2471 us, LowerFence = 405.3919 us, UpperFence = 426.3802 us
+ConfidenceInterval = [403.1812 us; 429.0529 us] (CI 99.9%), Margin = 12.9358 us (3.11% of Mean)
+Skewness = -0.83, Kurtosis = 1.79, MValue = 2
+-------------------- Histogram --------------------
+[408.677 us ; 420.481 us) | @@@@@
+---------------------------------------------------
+
+Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 375.5639 us, StdErr = 5.0197 us (1.34%); N = 5, StdDev = 11.2243 us
+Min = 357.7495 us, Q1 = 364.5090 us, Median = 381.1958 us, Q3 = 383.8028 us, Max = 384.3774 us
+IQR = 19.2938 us, LowerFence = 335.5683 us, UpperFence = 412.7435 us
+ConfidenceInterval = [332.3513 us; 418.7764 us] (CI 99.9%), Margin = 43.2125 us (11.51% of Mean)
+Skewness = -0.63, Kurtosis = 1.41, MValue = 2
+-------------------- Histogram --------------------
+[352.006 us ; 363.493 us) | @
+[363.493 us ; 377.043 us) | @
+[377.043 us ; 390.121 us) | @@@
+---------------------------------------------------
+
+Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 391.0656 us, StdErr = 9.5508 us (2.44%); N = 5, StdDev = 21.3561 us
+Min = 375.4696 us, Q1 = 376.4976 us, Median = 377.6822 us, Q3 = 412.3252 us, Max = 424.8694 us
+IQR = 35.8276 us, LowerFence = 322.7561 us, UpperFence = 466.0667 us
+ConfidenceInterval = [308.8464 us; 473.2848 us] (CI 99.9%), Margin = 82.2192 us (21.02% of Mean)
+Skewness = 0.63, Kurtosis = 1.38, MValue = 2
+-------------------- Histogram --------------------
+[364.542 us ; 387.504 us) | @@@
+[387.504 us ; 410.709 us) | @
+[410.709 us ; 435.797 us) | @
+---------------------------------------------------
+
+Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 385.8194 us, StdErr = 7.1220 us (1.85%); N = 5, StdDev = 15.9252 us
+Min = 372.5337 us, Q1 = 372.7825 us, Median = 377.4947 us, Q3 = 403.0186 us, Max = 405.6147 us
+IQR = 30.2361 us, LowerFence = 327.4283 us, UpperFence = 448.3728 us
+ConfidenceInterval = [324.5087 us; 447.1301 us] (CI 99.9%), Margin = 61.3107 us (15.89% of Mean)
+Skewness = 0.29, Kurtosis = 0.81, MValue = 3.33
+-------------------- Histogram --------------------
+[366.865 us ; 383.163 us) | @@@
+[383.163 us ; 394.870 us) | 
+[394.870 us ; 413.764 us) | @@
+---------------------------------------------------
+
+Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 415.3911 us, StdErr = 4.4614 us (1.07%); N = 5, StdDev = 9.9760 us
+Min = 403.8181 us, Q1 = 404.9228 us, Median = 419.5505 us, Q3 = 423.7797 us, Max = 426.8154 us
+IQR = 18.8569 us, LowerFence = 376.6374 us, UpperFence = 452.0651 us
+ConfidenceInterval = [376.9845 us; 453.7977 us] (CI 99.9%), Margin = 38.4066 us (9.25% of Mean)
+Skewness = -0.13, Kurtosis = 0.88, MValue = 2
+-------------------- Histogram --------------------
+[399.818 us ; 410.028 us) | @@
+[410.028 us ; 428.288 us) | @@@
+---------------------------------------------------
+
+Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 401.4182 us, StdErr = 9.0999 us (2.27%); N = 5, StdDev = 20.3480 us
+Min = 369.5743 us, Q1 = 382.8518 us, Median = 404.0588 us, Q3 = 418.6642 us, Max = 421.1477 us
+IQR = 35.8123 us, LowerFence = 329.1333 us, UpperFence = 472.3827 us
+ConfidenceInterval = [323.0803 us; 479.7560 us] (CI 99.9%), Margin = 78.3379 us (19.52% of Mean)
+Skewness = -0.51, Kurtosis = 1.43, MValue = 2
+-------------------- Histogram --------------------
+[359.162 us ; 379.986 us) | @
+[379.986 us ; 402.191 us) | @
+[402.191 us ; 423.015 us) | @@@
+---------------------------------------------------
+
+Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 398.0460 us, StdErr = 8.3486 us (2.10%); N = 5, StdDev = 18.6680 us
+Min = 374.6721 us, Q1 = 379.1406 us, Median = 402.3845 us, Q3 = 414.7821 us, Max = 420.2681 us
+IQR = 35.6416 us, LowerFence = 325.6782 us, UpperFence = 468.2445 us
+ConfidenceInterval = [326.1759 us; 469.9161 us] (CI 99.9%), Margin = 71.8701 us (18.06% of Mean)
+Skewness = -0.1, Kurtosis = 0.99, MValue = 3.33
+-------------------- Histogram --------------------
+[369.588 us ; 388.693 us) | @@
+[388.693 us ; 401.774 us) | 
+[401.774 us ; 420.879 us) | @@@
+---------------------------------------------------
+
+Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 394.3594 us, StdErr = 9.7053 us (2.46%); N = 5, StdDev = 21.7018 us
+Min = 371.0387 us, Q1 = 373.4674 us, Median = 391.7677 us, Q3 = 416.5472 us, Max = 418.5232 us
+IQR = 43.0798 us, LowerFence = 308.8477 us, UpperFence = 481.1668 us
+ConfidenceInterval = [310.8094 us; 477.9093 us] (CI 99.9%), Margin = 83.5499 us (21.19% of Mean)
+Skewness = 0.07, Kurtosis = 0.83, MValue = 3.33
+-------------------- Histogram --------------------
+[370.298 us ; 392.508 us) | @@@
+[392.508 us ; 405.442 us) | 
+[405.442 us ; 429.628 us) | @@
+---------------------------------------------------
+
+Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.4922 ms, StdErr = 0.0833 ms (3.34%); N = 5, StdDev = 0.1862 ms
+Min = 2.3269 ms, Q1 = 2.3289 ms, Median = 2.4188 ms, Q3 = 2.6921 ms, Max = 2.6989 ms
+IQR = 0.3632 ms, LowerFence = 1.7842 ms, UpperFence = 3.2368 ms
+ConfidenceInterval = [1.7752 ms; 3.2091 ms] (CI 99.9%), Margin = 0.7169 ms (28.77% of Mean)
+Skewness = 0.21, Kurtosis = 0.78, MValue = 3.33
+-------------------- Histogram --------------------
+[2.278 ms ; 2.468 ms) | @@@
+[2.468 ms ; 2.597 ms) | 
+[2.597 ms ; 2.794 ms) | @@
+---------------------------------------------------
+
+Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 555.3414 us, StdErr = 10.5525 us (1.90%); N = 5, StdDev = 23.5961 us
+Min = 530.1981 us, Q1 = 535.1011 us, Median = 550.1180 us, Q3 = 578.1935 us, Max = 590.1928 us
+IQR = 43.0924 us, LowerFence = 470.4624 us, UpperFence = 642.8321 us
+ConfidenceInterval = [464.4985 us; 646.1843 us] (CI 99.9%), Margin = 90.8429 us (16.36% of Mean)
+Skewness = 0.36, Kurtosis = 1.25, MValue = 3.33
+-------------------- Histogram --------------------
+[528.084 us ; 552.232 us) | @@@
+[552.232 us ; 566.119 us) | 
+[566.119 us ; 590.268 us) | @@
+---------------------------------------------------
+
+Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 1.4468 ms, StdErr = 0.0435 ms (3.01%); N = 5, StdDev = 0.0973 ms
+Min = 1.3651 ms, Q1 = 1.3669 ms, Median = 1.4154 ms, Q3 = 1.5425 ms, Max = 1.5964 ms
+IQR = 0.1756 ms, LowerFence = 1.1035 ms, UpperFence = 1.8058 ms
+ConfidenceInterval = [1.0722 ms; 1.8214 ms] (CI 99.9%), Margin = 0.3746 ms (25.89% of Mean)
+Skewness = 0.51, Kurtosis = 1.31, MValue = 2
+-------------------- Histogram --------------------
+[1.340 ms ; 1.440 ms) | @@@
+[1.440 ms ; 1.538 ms) | @
+[1.538 ms ; 1.646 ms) | @
+---------------------------------------------------
+
+Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=1000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 1.2648 ms, StdErr = 0.0065 ms (0.51%); N = 5, StdDev = 0.0145 ms
+Min = 1.2489 ms, Q1 = 1.2497 ms, Median = 1.2674 ms, Q3 = 1.2785 ms, Max = 1.2794 ms
+IQR = 0.0289 ms, LowerFence = 1.2063 ms, UpperFence = 1.3218 ms
+ConfidenceInterval = [1.2088 ms; 1.3207 ms] (CI 99.9%), Margin = 0.0560 ms (4.43% of Mean)
+Skewness = -0.11, Kurtosis = 0.8, MValue = 2
+-------------------- Histogram --------------------
+[1.241 ms ; 1.287 ms) | @@@@@
+---------------------------------------------------
+
+Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 19.1127 ms, StdErr = 0.6352 ms (3.32%); N = 5, StdDev = 1.4203 ms
+Min = 17.8887 ms, Q1 = 18.0377 ms, Median = 18.2812 ms, Q3 = 20.6034 ms, Max = 21.1410 ms
+IQR = 2.5657 ms, LowerFence = 14.1892 ms, UpperFence = 24.4519 ms
+ConfidenceInterval = [13.6446 ms; 24.5808 ms] (CI 99.9%), Margin = 5.4681 ms (28.61% of Mean)
+Skewness = 0.42, Kurtosis = 1.04, MValue = 3.33
+-------------------- Histogram --------------------
+[17.358 ms ; 18.812 ms) | @@@
+[18.812 ms ; 19.877 ms) | 
+[19.877 ms ; 21.330 ms) | @@
+---------------------------------------------------
+
+Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.0433 ms, StdErr = 0.0625 ms (3.06%); N = 5, StdDev = 0.1397 ms
+Min = 1.9176 ms, Q1 = 1.9281 ms, Median = 1.9740 ms, Q3 = 2.1931 ms, Max = 2.2219 ms
+IQR = 0.2650 ms, LowerFence = 1.5306 ms, UpperFence = 2.5906 ms
+ConfidenceInterval = [1.5054 ms; 2.5813 ms] (CI 99.9%), Margin = 0.5379 ms (26.33% of Mean)
+Skewness = 0.29, Kurtosis = 0.85, MValue = 3.33
+-------------------- Histogram --------------------
+[1.874 ms ; 2.017 ms) | @@@
+[2.017 ms ; 2.122 ms) | 
+[2.122 ms ; 2.265 ms) | @@
+---------------------------------------------------
+
+Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 9.9065 ms, StdErr = 0.2316 ms (2.34%); N = 5, StdDev = 0.5178 ms
+Min = 9.4840 ms, Q1 = 9.5293 ms, Median = 9.8398 ms, Q3 = 10.3169 ms, Max = 10.7874 ms
+IQR = 0.7876 ms, LowerFence = 8.3479 ms, UpperFence = 11.4983 ms
+ConfidenceInterval = [7.9128 ms; 11.9001 ms] (CI 99.9%), Margin = 1.9937 ms (20.12% of Mean)
+Skewness = 0.82, Kurtosis = 1.8, MValue = 2.5
+-------------------- Histogram --------------------
+[ 9.400 ms ;  9.930 ms) | @@@@
+[ 9.930 ms ; 10.522 ms) | 
+[10.522 ms ; 11.052 ms) | @
+---------------------------------------------------
+
+Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=10000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 7.2179 ms, StdErr = 0.0536 ms (0.74%); N = 5, StdDev = 0.1197 ms
+Min = 7.0980 ms, Q1 = 7.1088 ms, Median = 7.1941 ms, Q3 = 7.3388 ms, Max = 7.3808 ms
+IQR = 0.2300 ms, LowerFence = 6.7639 ms, UpperFence = 7.6838 ms
+ConfidenceInterval = [6.7569 ms; 7.6789 ms] (CI 99.9%), Margin = 0.4610 ms (6.39% of Mean)
+Skewness = 0.25, Kurtosis = 1.01, MValue = 2
+-------------------- Histogram --------------------
+[7.075 ms ; 7.412 ms) | @@@@@
+---------------------------------------------------
+
+Serializers.ToJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 180.6368 ms, StdErr = 2.5413 ms (1.41%); N = 5, StdDev = 5.6826 ms
+Min = 175.3604 ms, Q1 = 176.1572 ms, Median = 178.5728 ms, Q3 = 186.1485 ms, Max = 189.5210 ms
+IQR = 9.9913 ms, LowerFence = 161.1703 ms, UpperFence = 201.1354 ms
+ConfidenceInterval = [158.7593 ms; 202.5144 ms] (CI 99.9%), Margin = 21.8776 ms (12.11% of Mean)
+Skewness = 0.55, Kurtosis = 1.39, MValue = 2
+-------------------- Histogram --------------------
+[174.059 ms ; 179.874 ms) | @@@
+[179.874 ms ; 185.684 ms) | @
+[185.684 ms ; 192.429 ms) | @
+---------------------------------------------------
+
+Serializers.ToMessagePack: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 17.4832 ms, StdErr = 0.1482 ms (0.85%); N = 5, StdDev = 0.3313 ms
+Min = 17.1493 ms, Q1 = 17.2160 ms, Median = 17.4647 ms, Q3 = 17.7597 ms, Max = 18.0187 ms
+IQR = 0.5437 ms, LowerFence = 16.4005 ms, UpperFence = 18.5752 ms
+ConfidenceInterval = [16.2077 ms; 18.7588 ms] (CI 99.9%), Margin = 1.2755 ms (7.30% of Mean)
+Skewness = 0.6, Kurtosis = 1.6, MValue = 2
+-------------------- Histogram --------------------
+[16.980 ms ; 17.566 ms) | @@@@
+[17.566 ms ; 18.188 ms) | @
+---------------------------------------------------
+
+Serializers.ToMessagePackJson: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 104.1836 ms, StdErr = 3.4223 ms (3.28%); N = 5, StdDev = 7.6526 ms
+Min = 94.7004 ms, Q1 = 98.4393 ms, Median = 102.6781 ms, Q3 = 110.6806 ms, Max = 115.8578 ms
+IQR = 12.2414 ms, LowerFence = 80.0772 ms, UpperFence = 129.0426 ms
+ConfidenceInterval = [74.7218 ms; 133.6453 ms] (CI 99.9%), Margin = 29.4618 ms (28.28% of Mean)
+Skewness = 0.33, Kurtosis = 1.56, MValue = 2.67
+-------------------- Histogram --------------------
+[ 90.785 ms ;  99.925 ms) | @
+[ 99.925 ms ; 107.757 ms) | @@@
+[107.757 ms ; 111.942 ms) | 
+[111.942 ms ; 119.774 ms) | @
+---------------------------------------------------
+
+Serializers.ToProtobuf: Job-ZLGOUL(Runtime=Core, MaxIterationCount=5, MaxWarmupIterationCount=8, MinIterationCount=3) [BookCount=100000]
+Runtime = .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 77.0981 ms, StdErr = 3.9028 ms (5.06%); N = 5, StdDev = 8.7270 ms
+Min = 64.9358 ms, Q1 = 67.9142 ms, Median = 81.2653 ms, Q3 = 84.1983 ms, Max = 84.2884 ms
+IQR = 16.2842 ms, LowerFence = 43.4879 ms, UpperFence = 108.6246 ms
+ConfidenceInterval = [43.5000 ms; 110.6961 ms] (CI 99.9%), Margin = 33.5980 ms (43.58% of Mean)
+Skewness = -0.38, Kurtosis = 0.99, MValue = 3.33
+-------------------- Histogram --------------------
+[63.449 ms ; 72.380 ms) | @@
+[72.380 ms ; 78.311 ms) | 
+[78.311 ms ; 88.754 ms) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.1, OS=Windows 10.0.15063.1266 (1703/CreatorsUpdate/Redstone2)
+Intel Core i7-6600U CPU 2.60GHz (Max: 2.61GHz) (Skylake), 1 CPU, 4 logical and 2 physical cores
+Frequency=2742187 Hz, Resolution=364.6724 ns, Timer=TSC
+.NET Core SDK=2.1.401
+  [Host]     : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+  Job-ZLGOUL : .NET Core 2.1.1 (CoreCLR 4.6.26606.02, CoreFX 4.6.26606.05), 64bit RyuJIT
+
+Runtime=Core  MaxIterationCount=5  MaxWarmupIterationCount=8  
+MinIterationCount=3  
+
+            Method | BookCount |         Mean |        Error |       StdDev |
+------------------ |---------- |-------------:|-------------:|-------------:|
+            ToJson |         1 |     416.1 us |     12.94 us |     3.360 us |
+     ToMessagePack |         1 |     375.6 us |     43.21 us |    11.224 us |
+ ToMessagePackJson |         1 |     391.1 us |     82.22 us |    21.356 us |
+        ToProtobuf |         1 |     385.8 us |     61.31 us |    15.925 us |
+            ToJson |        10 |     415.4 us |     38.41 us |     9.976 us |
+     ToMessagePack |        10 |     401.4 us |     78.34 us |    20.348 us |
+ ToMessagePackJson |        10 |     398.0 us |     71.87 us |    18.668 us |
+        ToProtobuf |        10 |     394.4 us |     83.55 us |    21.702 us |
+            ToJson |      1000 |   2,492.2 us |    716.95 us |   186.224 us |
+     ToMessagePack |      1000 |     555.3 us |     90.84 us |    23.596 us |
+ ToMessagePackJson |      1000 |   1,446.8 us |    374.64 us |    97.311 us |
+        ToProtobuf |      1000 |   1,264.8 us |     55.97 us |    14.538 us |
+            ToJson |     10000 |  19,112.7 us |  5,468.11 us | 1,420.322 us |
+     ToMessagePack |     10000 |   2,043.3 us |    537.94 us |   139.727 us |
+ ToMessagePackJson |     10000 |   9,906.5 us |  1,993.67 us |   517.847 us |
+        ToProtobuf |     10000 |   7,217.9 us |    461.00 us |   119.742 us |
+            ToJson |    100000 | 180,636.8 us | 21,877.57 us | 5,682.617 us |
+     ToMessagePack |    100000 |  17,483.2 us |  1,275.54 us |   331.317 us |
+ ToMessagePackJson |    100000 | 104,183.6 us | 29,461.76 us | 7,652.583 us |
+        ToProtobuf |    100000 |  77,098.1 us | 33,598.03 us | 8,726.963 us |
+
+// * Legends *
+  BookCount : Value of the 'BookCount' parameter
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  1 us      : 1 Microsecond (0.000001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:03:50 (230.9 sec), executed benchmarks: 20
+
+// * Artifacts cleanup *
