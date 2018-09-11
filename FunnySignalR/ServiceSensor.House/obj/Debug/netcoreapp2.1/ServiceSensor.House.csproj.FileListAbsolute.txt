@@ -1,0 +1,17 @@
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.csprojAssemblyReference.cache
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.csproj.CoreCompileInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.RazorAssemblyInfo.cache
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.RazorAssemblyInfo.cs
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.AssemblyInfoInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.AssemblyInfo.cs
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.House.deps.json
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.House.runtimeconfig.json
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.House.runtimeconfig.dev.json
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.House.dll
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.House.pdb
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.Common.dll
+C:\Projects\FunnySignalR\ServiceSensor.House\bin\Debug\netcoreapp2.1\ServiceSensor.Common.pdb
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.RazorTargetAssemblyInfo.cache
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.csproj.CopyComplete
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.dll
+C:\Projects\FunnySignalR\ServiceSensor.House\obj\Debug\netcoreapp2.1\ServiceSensor.House.pdb

@@ -1,0 +1,9 @@
+C:\Projects\FunnySignalR\ServiceSensor.Common\bin\Debug\netstandard2.0\ServiceSensor.Common.deps.json
+C:\Projects\FunnySignalR\ServiceSensor.Common\bin\Debug\netstandard2.0\ServiceSensor.Common.dll
+C:\Projects\FunnySignalR\ServiceSensor.Common\bin\Debug\netstandard2.0\ServiceSensor.Common.pdb
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.csprojAssemblyReference.cache
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.csproj.CoreCompileInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.AssemblyInfoInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.AssemblyInfo.cs
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.dll
+C:\Projects\FunnySignalR\ServiceSensor.Common\obj\Debug\netstandard2.0\ServiceSensor.Common.pdb

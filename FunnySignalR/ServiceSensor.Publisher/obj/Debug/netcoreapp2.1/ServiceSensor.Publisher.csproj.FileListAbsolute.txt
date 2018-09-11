@@ -1,0 +1,14 @@
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.csprojAssemblyReference.cache
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.csproj.CoreCompileInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.AssemblyInfoInputs.cache
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.AssemblyInfo.cs
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Publisher.deps.json
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Publisher.runtimeconfig.json
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Publisher.runtimeconfig.dev.json
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Publisher.dll
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Publisher.pdb
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Common.dll
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\bin\Debug\netcoreapp2.1\ServiceSensor.Common.pdb
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.csproj.CopyComplete
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.dll
+C:\Projects\FunnySignalR\ServiceSensor.Publisher\obj\Debug\netcoreapp2.1\ServiceSensor.Publisher.pdb

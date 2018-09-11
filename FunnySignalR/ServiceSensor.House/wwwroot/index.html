@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Service Health Sensor Sample</title>
+    <script src="scripts/chart.js"></script>
+    <script src="scripts/signalr.js"></script>
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var samples = 100;
+            var speed = 300;
+            var values = [];
+            var labels = [];
+            var charts = [];
+            var value = 0;
+            values.length = samples;
+            labels.length = samples;
+            values.fill(0);
+            labels.fill(0);
+
+            var chart = new Chart(document.getElementById("serviceChart"),
+                {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                data: values,
+                                backgroundColor: 'rgb(102, 178, 255)',
+                                borderColor: 'rgb(0, 102, 0)',
+                                borderSize: 3
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: false,
+                        animation: {
+                            duration: speed * 1,
+                            easing: 'easeInQuad'
+                        },
+                        legend: false,
+                        scales: {
+                            xAxes: [
+                                {
+                                    display: false,
+                                }
+                            ],
+                            yAxes: [
+                                {
+                                    ticks: {
+                                        max: 30,
+                                        min: 0
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                });
+
+            var hubConn = new signalR.HubConnectionBuilder()
+                .withUrl("healthSensor")
+                .build();
+            hubConn.on('Broadcast',
+                function (sender, info) {
+                    values.push(info.healthLevel);
+                    values.shift();
+                    labels.push(info.serviceName);
+                    labels.shift();
+                    chart.update();
+                });
+            hubConn.start();
+        });
+    </script>
+</head>
+
+<body>
+    <canvas id="serviceChart" style="width: 600px; height: 440px"></canvas>
+</body>
+
+</html>
