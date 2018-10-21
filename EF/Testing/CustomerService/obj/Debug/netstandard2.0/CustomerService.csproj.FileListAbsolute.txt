@@ -1,0 +1,9 @@
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.csprojAssemblyReference.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/bin/Debug/netstandard2.0/CustomerService.deps.json
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/bin/Debug/netstandard2.0/CustomerService.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/bin/Debug/netstandard2.0/CustomerService.pdb
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService/obj/Debug/netstandard2.0/CustomerService.pdb

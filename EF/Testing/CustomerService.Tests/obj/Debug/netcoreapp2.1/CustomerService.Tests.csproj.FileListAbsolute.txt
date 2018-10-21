@@ -1,0 +1,17 @@
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.Tests.deps.json
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.Tests.runtimeconfig.json
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.Tests.runtimeconfig.dev.json
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.Tests.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.Tests.pdb
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/bin/Debug/netcoreapp2.1/CustomerService.pdb
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.csprojAssemblyReference.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.csproj.CoreCompileInputs.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.AssemblyInfoInputs.cache
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.AssemblyInfo.cs
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.csproj.CopyComplete
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.dll
+/home/burakselyum/dotnetcore/EF/Testing/CustomerService.Tests/obj/Debug/netcoreapp2.1/CustomerService.Tests.pdb
